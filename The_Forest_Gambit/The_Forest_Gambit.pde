@@ -8,6 +8,7 @@ String Path3 = "The Third path";
 PFont TitleFont;
 PFont QuestionFont;
 PFont ButtonFont;
+PImage BackgroundImage;
 color Gray=#AFAFAF;
 color Black=#000000;
 color Green=#00DE01;
@@ -46,10 +47,16 @@ void setup() {
   appHeight = height;
   //if (appWidth > appHeight) ? :
   //
+  String open = "/";
+  String imagesPath = open;
+  String Imagefolder = "Images";
+  String ForestImage = "Forest Image.jpg";
+  //
   xRectBackground = appWidth*0;
   yRectBackground = appHeight*0;
   widthRectBackground = appWidth-1;
   heightRectBackground = appHeight-1;
+  BackgroundImage = loadImage(imagesPath + Imagefolder + open + ForestImage);
   //
   Question1x = appWidth*1/5;
   Question1y = appHeight*1/4;
@@ -83,9 +90,8 @@ void setup() {
 //
 void draw() {
   //
-  fill(Gray);
   rect(xRectBackground, yRectBackground, widthRectBackground, heightRectBackground);
-  fill(resetDefaultInk);
+  image(BackgroundImage, xRectBackground, yRectBackground, widthRectBackground, heightRectBackground);
   rect(Title1x, Title1y, Title1width, Title1height);
   rect(Question1x, Question1y, Question1width, Question1height);
   rect(xChoiceButton1, yChoiceButton1, widthChoiceButton1, heightChoiceButton1);
