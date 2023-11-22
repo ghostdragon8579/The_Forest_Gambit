@@ -42,12 +42,12 @@ void setup() {
   heightRectBackground = appHeight-1;
   //
   Question1x = appWidth*1/5;
-  Question1y = appHeight*1/6;
+  Question1y = appHeight*1/4;
   Question1width = appWidth*3/5;
-  Question1height = appHeight*3/13;
+  Question1height = appHeight*4/13;
   //
   xChoiceButton1 = appWidth*1/6;
-  yChoiceButton1 = appHeight*1/2;
+  yChoiceButton1 = appHeight*2/3;
   widthChoiceButton1 = appWidth*1/6;
   heightChoiceButton1 = appHeight*2/9;
   //
