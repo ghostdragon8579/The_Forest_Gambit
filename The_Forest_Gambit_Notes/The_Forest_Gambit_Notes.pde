@@ -1,4 +1,5 @@
 /*
+- TEXT MUST FIRST GO IN README FILE.
 - Create a Choose your own adventure.
 - All parts must have a reset button.
 - The reset Button must have a confirmation;
