@@ -1,14 +1,17 @@
 //Global Variables
 int appWidth, appHeight;
 int size;
+String Title1 = "The Forest Gambit";
 String Path1 = "The First path";
 String Path2 = "The Second path";
 String Path3 = "The Third path";
+PFont TitleFont;
 PFont QuestionFont;
 PFont ButtonFont;
 color Gray=#AFAFAF;
 color Black=#000000;
 color Green=#00DE01;
+color DarkGreen=#02B703;
 color resetDefaultInk=#FFFFFF;
 float xRectBackground, yRectBackground, widthRectBackground, heightRectBackground;
 float Title1x, Title1y, Title1width, Title1height;
@@ -74,6 +77,7 @@ void setup() {
   heightChoiceButton3 = heightChoiceButton1;
   //
   QuestionFont = createFont("Arial", 55);
+  TitleFont = createFont("Times New Roman Bold", 55);
   //
 } //End setup
 //
@@ -87,6 +91,13 @@ void draw() {
   rect(xChoiceButton1, yChoiceButton1, widthChoiceButton1, heightChoiceButton1);
   rect(xChoiceButton2, yChoiceButton2, widthChoiceButton2, heightChoiceButton2);
   rect(xChoiceButton3, yChoiceButton3, widthChoiceButton3, heightChoiceButton3);
+  //
+  fill(DarkGreen);
+  textAlign(CENTER, CENTER); 
+  size = 50;
+  textFont(TitleFont, 60); 
+  text(Title1, Title1x, Title1y, Title1width, Title1height);
+  fill(resetDefaultInk);
   //
   fill(Black);
   textAlign(CENTER, CENTER); 
