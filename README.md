@@ -1,6 +1,8 @@
 # The_Forest_Gambit
 
-# Text Notes
+# Text Notes/Text for The_Forest_Gambit
+- [The Forest Gambit]
+- [Which path do you choose?]
 - [The First Path]
 - [The Second Path]
 - [The Third Path]
