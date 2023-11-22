@@ -93,20 +93,20 @@ void draw() {
   rect(xChoiceButton3, yChoiceButton3, widthChoiceButton3, heightChoiceButton3);
   //
   color hoverOverColor=resetDefaultInk;
-  if (mouseX>xConfirmationYes && mouseX<xConfirmationYes+widthConfirmationYes && mouseY>yConfirmationYes && mouseY<yConfirmationYes+heightConfirmationYes) {
+  if (mouseX>xChoiceButton1 && mouseX<xChoiceButton1+widthChoiceButton1 && mouseY>yChoiceButton1 && mouseY<yChoiceButton1+heightChoiceButton1) {
     hoverOverColor = Green;
     fill(hoverOverColor);
-    rect(xConfirmationYes, yConfirmationYes, widthConfirmationYes, heightConfirmationYes);
+    rect(xChoiceButton1, yChoiceButton1, widthChoiceButton1, heightChoiceButton1);
     fill(resetDefaultInk);
-  } else if (mouseX>xConfirmationNo && mouseX<xConfirmationNo+widthConfirmationNo && mouseY>yConfirmationNo && mouseY<yConfirmationNo+heightConfirmationNo) {
+  } else if (mouseX>xChoiceButton2 && mouseX<xChoiceButton2+widthChoiceButton2 && mouseY>yChoiceButton2 && mouseY<yChoiceButton2+heightChoiceButton2) {
     hoverOverColor = Green;
     fill(hoverOverColor);
-    rect(xConfirmationNo, yConfirmationNo, widthConfirmationNo, heightConfirmationNo);
+    rect(xChoiceButton2, yChoiceButton2, widthChoiceButton2, heightChoiceButton2);
     fill(resetDefaultInk);
-  }  else if (mouseX>xConfirmationNo && mouseX<xConfirmationNo+widthConfirmationNo && mouseY>yConfirmationNo && mouseY<yConfirmationNo+heightConfirmationNo) {
+  }  else if (mouseX>xChoiceButton3 && mouseX<xChoiceButton3+widthChoiceButton3 && mouseY>yChoiceButton3 && mouseY<yChoiceButton3+heightChoiceButton3) {
     hoverOverColor = Green;
     fill(hoverOverColor);
-    rect(xConfirmationNo, yConfirmationNo, widthConfirmationNo, heightConfirmationNo);
+    rect(xChoiceButton3, yChoiceButton3, widthChoiceButton3, heightChoiceButton3);
     fill(resetDefaultInk);
   }
   //
