@@ -7,6 +7,7 @@ color Black=#000000;
 color Green=#00DE01;
 color resetDefaultInk=#FFFFFF;
 float xRectBackground, yRectBackground, widthRectBackground, heightRectBackground;
+float Title1x, Title1y, Title1width, Title1height;
 float Question1x, Question1y, Question1width, Question1height;
 float Question2x, Question2y, Question2width, Question2height;
 float Question3x, Question3y, Question3width, Question3height;
@@ -36,6 +37,7 @@ void setup() {
   size(1000, 800);
   appWidth = width;
   appHeight = height;
+  //if (appWidth > appHeight) ? :
   //
   xRectBackground = appWidth*0;
   yRectBackground = appHeight*0;
@@ -46,6 +48,11 @@ void setup() {
   Question1y = appHeight*1/4;
   Question1width = appWidth*3/5;
   Question1height = appHeight*4/13;
+  //
+  Title1x = Question1x;
+  Title1y = appHeight*1/20;
+  Title1width = Question1width;
+  Title1height = appHeight*2/13;
   //
   xChoiceButton1 = appWidth*1/6;
   yChoiceButton1 = appHeight*2/3;
@@ -71,6 +78,7 @@ void draw() {
   fill(Gray);
   rect(xRectBackground, yRectBackground, widthRectBackground, heightRectBackground);
   fill(resetDefaultInk);
+  rect(Title1x, Title1y, Title1width, Title1height);
   rect(Question1x, Question1y, Question1width, Question1height);
   rect(xChoiceButton1, yChoiceButton1, widthChoiceButton1, heightChoiceButton1);
   rect(xChoiceButton2, yChoiceButton2, widthChoiceButton2, heightChoiceButton2);
