@@ -51,7 +51,7 @@ void setup() {
   widthChoiceButton1 = appWidth*1/6;
   heightChoiceButton1 = appHeight*2/9;
   //
-  xChoiceButton2 = appWidth*3/7-appWidth/70;
+  xChoiceButton2 = appWidth*3/7-appWidth/75;
   yChoiceButton2 = yChoiceButton1;
   widthChoiceButton2 = appWidth*1/6;
   heightChoiceButton2 = heightChoiceButton1;
