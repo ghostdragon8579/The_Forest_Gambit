@@ -1,5 +1,6 @@
 //Global Variables
 PFont QuestionFont;
+PFont ButtonFont;
 color Gray=#AFAFAF;
 color Black=#000000;
 color Green=#00DE01;
@@ -50,15 +51,15 @@ void setup() {
   widthChoiceButton1 = appWidth*1/6;
   heightChoiceButton1 = appHeight*2/9;
   //
-  xChoiceButton2 = appWidth*3/7;
+  xChoiceButton2 = appWidth*3/7-appWidth/70;
   yChoiceButton2 = yChoiceButton1;
   widthChoiceButton2 = appWidth*1/6;
   heightChoiceButton2 = heightChoiceButton1;
   //
-  //xChoiceButton3 = ;
-  //yChoiceButton3 = ;
-  //widthChoiceButton3 = ;
-  //heightChoiceButton3 = ;
+  xChoiceButton3 = appWidth*2/3;
+  yChoiceButton3 = yChoiceButton1;
+  widthChoiceButton3 = appWidth*1/6;
+  heightChoiceButton3 = heightChoiceButton1;
   //
   QuestionFont = createFont("Arial", 55);
   //
@@ -72,7 +73,7 @@ void draw() {
   rect(Question1x, Question1y, Question1width, Question1height);
   rect(xChoiceButton1, yChoiceButton1, widthChoiceButton1, heightChoiceButton1);
   rect(xChoiceButton2, yChoiceButton2, widthChoiceButton2, heightChoiceButton2);
-  //rect(xChoiceButton3, yChoiceButton3, widthChoiceButton3, heightChoiceButton3);
+  rect(xChoiceButton3, yChoiceButton3, widthChoiceButton3, heightChoiceButton3);
   //
 } //End draw
 //
