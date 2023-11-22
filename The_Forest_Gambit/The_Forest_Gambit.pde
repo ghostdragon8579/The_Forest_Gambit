@@ -1,4 +1,5 @@
 //Global Variables
+int appWidth, appHeight;
 PFont QuestionFont;
 PFont ButtonFont;
 color Gray=#AFAFAF;
@@ -33,8 +34,8 @@ void setup() {
   //
   //fullScreen();
   size(1000, 800);
-  int appWidth = width;
-  int appHeight = height;
+  appWidth = width;
+  appHeight = height;
   //
   xRectBackground = appWidth*0;
   yRectBackground = appHeight*0;
