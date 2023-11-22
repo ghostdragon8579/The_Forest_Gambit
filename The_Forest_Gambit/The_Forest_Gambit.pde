@@ -45,20 +45,22 @@ void setup() {
   Question1width = appWidth*3/5;
   Question1height = appHeight*3/13;
   //
-  //xChoiceButton1 = ;
-  //yChoiceButton1 = ;
-  //widthChoiceButton1 = ;
-  //heightChoiceButton1 = ;
+  xChoiceButton1 = appWidth*1/6;
+  yChoiceButton1 = appHeight*1/2;
+  widthChoiceButton1 = appWidth*1/6;
+  heightChoiceButton1 = appHeight*2/9;
   //
-  //xChoiceButton2 = ;
-  //yChoiceButton2 = ;
-  //widthChoiceButton2 = ;
-  //heightChoiceButton2 = ;
+  xChoiceButton2 = appWidth*3/7;
+  yChoiceButton2 = yChoiceButton1;
+  widthChoiceButton2 = appWidth*1/6;
+  heightChoiceButton2 = heightChoiceButton1;
   //
   //xChoiceButton3 = ;
   //yChoiceButton3 = ;
   //widthChoiceButton3 = ;
   //heightChoiceButton3 = ;
+  //
+  QuestionFont = createFont("Arial", 55);
   //
 } //End setup
 //
@@ -68,6 +70,9 @@ void draw() {
   rect(xRectBackground, yRectBackground, widthRectBackground, heightRectBackground);
   fill(resetDefaultInk);
   rect(Question1x, Question1y, Question1width, Question1height);
+  rect(xChoiceButton1, yChoiceButton1, widthChoiceButton1, heightChoiceButton1);
+  rect(xChoiceButton2, yChoiceButton2, widthChoiceButton2, heightChoiceButton2);
+  //rect(xChoiceButton3, yChoiceButton3, widthChoiceButton3, heightChoiceButton3);
   //
 } //End draw
 //
