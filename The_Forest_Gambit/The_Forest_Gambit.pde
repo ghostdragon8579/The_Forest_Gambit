@@ -92,6 +92,24 @@ void draw() {
   rect(xChoiceButton2, yChoiceButton2, widthChoiceButton2, heightChoiceButton2);
   rect(xChoiceButton3, yChoiceButton3, widthChoiceButton3, heightChoiceButton3);
   //
+  color hoverOverColor=resetDefaultInk;
+  if (mouseX>xConfirmationYes && mouseX<xConfirmationYes+widthConfirmationYes && mouseY>yConfirmationYes && mouseY<yConfirmationYes+heightConfirmationYes) {
+    hoverOverColor = Green;
+    fill(hoverOverColor);
+    rect(xConfirmationYes, yConfirmationYes, widthConfirmationYes, heightConfirmationYes);
+    fill(resetDefaultInk);
+  } else if (mouseX>xConfirmationNo && mouseX<xConfirmationNo+widthConfirmationNo && mouseY>yConfirmationNo && mouseY<yConfirmationNo+heightConfirmationNo) {
+    hoverOverColor = Green;
+    fill(hoverOverColor);
+    rect(xConfirmationNo, yConfirmationNo, widthConfirmationNo, heightConfirmationNo);
+    fill(resetDefaultInk);
+  }  else if (mouseX>xConfirmationNo && mouseX<xConfirmationNo+widthConfirmationNo && mouseY>yConfirmationNo && mouseY<yConfirmationNo+heightConfirmationNo) {
+    hoverOverColor = Green;
+    fill(hoverOverColor);
+    rect(xConfirmationNo, yConfirmationNo, widthConfirmationNo, heightConfirmationNo);
+    fill(resetDefaultInk);
+  }
+  //
   fill(DarkGreen);
   textAlign(CENTER, CENTER); 
   size = 50;
