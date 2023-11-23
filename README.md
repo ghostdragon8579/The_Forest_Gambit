@@ -13,7 +13,7 @@ three in a forest. The first going straght through the forest, the second going 
 # Ending one Text Notes
 - [Congratulations You Won!]
 - []
-- [Reset?]
+- [Reset and try again?]
 
 # Creaton Notes
 - [Create a Choose your own adventure]
