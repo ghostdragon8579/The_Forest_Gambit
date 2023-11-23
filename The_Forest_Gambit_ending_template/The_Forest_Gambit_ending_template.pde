@@ -5,6 +5,7 @@ color resetDefaultInk=#FFFFFF;
 int appWidth, appHeight;
 int size;
 PImage BackgroundImage2;
+PFont ButtonFont;
 PFont TitleFont;
 String Title2 = "Congratulations You Won!";
 float xRectBackground, yRectBackground, widthRectBackground, heightRectBackground;
@@ -49,6 +50,7 @@ void setup() {
   ResetButton1width = appWidth*1/5;
   ResetButton1height = appHeight*2/13;;
   //
+  ButtonFont = createFont("Calibri", 55);
   TitleFont = createFont("Times New Roman Bold", 55);
   //
 } //End setup
@@ -60,6 +62,13 @@ void draw() {
   rect(Ending1x, Ending1y, Ending1width, Ending1height);
   rect(Title2x, Title2y, Title2width, Title2height);
   rect(ResetButton1x, ResetButton1y, ResetButton1width, ResetButton1height);
+  //
+  fill(Black);
+  textAlign(CENTER, CENTER); 
+  size = 50;
+  textFont(ButtonFont, 30); 
+  text(Title2, ResetButton1x, ResetButton1y, ResetButton1width, ResetButton1height);
+  fill(resetDefaultInk);
   //
   fill(DarkGreen);
   textAlign(CENTER, CENTER); 
