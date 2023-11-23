@@ -2,6 +2,7 @@
 int appWidth, appHeight;
 int size;
 String Title1 = "The Forest Gambit";
+String Story1 = "You are traveling back home after the war when the path splits into three in a forest. The first going straght through the forest, the second going around the edge, and the third going out of the forest. Which path do you choose?";
 String Path1 = "The First path";
 String Path2 = "The Second path";
 String Path3 = "The Third path";
@@ -121,6 +122,13 @@ void draw() {
   size = 50;
   textFont(TitleFont, 60); 
   text(Title1, Title1x, Title1y, Title1width, Title1height);
+  fill(resetDefaultInk);
+  //
+  fill(Black);
+  textAlign(CENTER, CENTER); 
+  size = 50;
+  textFont(QuestionFont, 25); 
+  text(Story1, Question1x, Question1y, Question1width, Question1height);
   fill(resetDefaultInk);
   //
   fill(Black);

@@ -2,7 +2,8 @@
 
 # Text Notes/Text for The_Forest_Gambit
 - [The Forest Gambit]
-- [Which path do you choose?]
+- [You are traveling back home after the war when the path splits into
+three in a forest. The first going straght through the forest, the second going around the edge, and the third going out of the forest. Which path do you choose?]
 - [The First Path]
 - [The Second Path]
 - [The Third Path]
