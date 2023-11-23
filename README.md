@@ -12,7 +12,7 @@ three in a forest. The first going straght through the forest, the second going 
 
 # Ending one Text Notes
 - [Congratulations You Won!]
-- []
+- [You decided that the forest wasn't safe and decided to leave. You make it back home safe and sound.]
 - [Reset and try again?]
 
 # Creaton Notes
