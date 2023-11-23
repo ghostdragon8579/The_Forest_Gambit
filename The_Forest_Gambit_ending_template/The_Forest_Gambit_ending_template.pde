@@ -44,10 +44,10 @@ void setup() {
   Title2width = appWidth*3/5;
   Title2height = appHeight*2/13;
   //
-  //ResetButton1x = ;
-  //ResetButton1y = ;
-  //ResetButton1width = ;
-  //ResetButton1height = ;
+  ResetButton1x = appWidth*2/5;
+  ResetButton1y = appHeight*2/3;
+  ResetButton1width = appWidth*1/5;
+  ResetButton1height = appHeight*2/13;;
   //
   TitleFont = createFont("Times New Roman Bold", 55);
   //
@@ -59,6 +59,7 @@ void draw() {
   image(BackgroundImage2, xRectBackground, yRectBackground, widthRectBackground, heightRectBackground);
   rect(Ending1x, Ending1y, Ending1width, Ending1height);
   rect(Title2x, Title2y, Title2width, Title2height);
+  rect(ResetButton1x, ResetButton1y, ResetButton1width, ResetButton1height);
   //
   fill(DarkGreen);
   textAlign(CENTER, CENTER); 
