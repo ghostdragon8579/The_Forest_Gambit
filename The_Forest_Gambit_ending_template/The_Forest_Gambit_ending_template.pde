@@ -10,6 +10,7 @@ String Title2 = "Congratulations You Won!";
 float xRectBackground, yRectBackground, widthRectBackground, heightRectBackground;
 float Ending1x, Ending1y, Ending1width, Ending1height;
 float Title2x, Title2y, Title2width, Title2height;
+float ResetButton1x, ResetButton1y, ResetButton1width, ResetButton1height;
 //
 void setup() {
 //
@@ -42,6 +43,11 @@ void setup() {
   Title2y = appHeight*1/20;
   Title2width = appWidth*3/5;
   Title2height = appHeight*2/13;
+  //
+  //ResetButton1x = ;
+  //ResetButton1y = ;
+  //ResetButton1width = ;
+  //ResetButton1height = ;
   //
   TitleFont = createFont("Times New Roman Bold", 55);
   //
