@@ -1,8 +1,6 @@
 # The_Forest_Gambit
 
-# Text Notes/Text for The_Forest_Gambit
-
-Question set one
+# Question set one
 - [The Forest Gambit]
 - [You are traveling back home after the war when the path splits into
 three in a forest. The first going straght through the forest, the second going around the edge, and the third going out of the forest. Which path do you choose?]
@@ -21,6 +19,11 @@ three in a forest. The first going straght through the forest, the second going 
 - [Congratulations You Won!]
 - [You decided that the forest wasn't safe and decided to leave. You make it back home safe and sound.]
 - [Reset and try again?]
+
+# Gambit Location Map Notes
+- [Start of the Gambit will have a button leading to the location map]
+- [Clicking on any location marked on the map will take you to that part
+of the adventure.]
 
 # Creaton Notes
 - [Create a Choose your own adventure]
