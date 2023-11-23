@@ -1,6 +1,7 @@
 //Global Variables
 color Black=#000000;
 color DarkGreen=#02B703;
+color Red=#DE001E;
 color resetDefaultInk=#FFFFFF;
 int appWidth, appHeight;
 int size;
@@ -8,6 +9,7 @@ PImage BackgroundImage2;
 PFont ButtonFont;
 PFont TitleFont;
 String Title2 = "Congratulations You Won!";
+String ResetButton1 = "Reset and try again?";
 float xRectBackground, yRectBackground, widthRectBackground, heightRectBackground;
 float Ending1x, Ending1y, Ending1width, Ending1height;
 float Title2x, Title2y, Title2width, Title2height;
@@ -63,11 +65,19 @@ void draw() {
   rect(Title2x, Title2y, Title2width, Title2height);
   rect(ResetButton1x, ResetButton1y, ResetButton1width, ResetButton1height);
   //
+  color hoverOverColor=resetDefaultInk;
+  if (mouseX>ResetButton1x && mouseX<ResetButton1x+ResetButton1width && mouseY>ResetButton1y && mouseY<ResetButton1y+ResetButton1height) {
+    hoverOverColor = Red;
+    fill(hoverOverColor);
+    rect(ResetButton1x, ResetButton1y, ResetButton1width, ResetButton1height);
+    fill(resetDefaultInk);
+  }
+  //
   fill(Black);
   textAlign(CENTER, CENTER); 
   size = 50;
   textFont(ButtonFont, 30); 
-  text(Title2, ResetButton1x, ResetButton1y, ResetButton1width, ResetButton1height);
+  text(ResetButton1, ResetButton1x, ResetButton1y, ResetButton1width, ResetButton1height);
   fill(resetDefaultInk);
   //
   fill(DarkGreen);

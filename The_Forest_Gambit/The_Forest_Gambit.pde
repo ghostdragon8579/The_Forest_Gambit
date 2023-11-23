@@ -10,6 +10,7 @@ PFont TitleFont;
 PFont QuestionFont;
 PFont ButtonFont;
 PImage BackgroundImage;
+color Red=#DE001E;
 color Gray=#AFAFAF;
 color Black=#000000;
 color Green=#00DE01;
@@ -17,16 +18,17 @@ color DarkGreen=#02B703;
 color resetDefaultInk=#FFFFFF;
 float xRectBackground, yRectBackground, widthRectBackground, heightRectBackground;
 float Title1x, Title1y, Title1width, Title1height;
+float Title2x, Title2y, Title2width, Title2height;
 float Question1x, Question1y, Question1width, Question1height;
 float Question2x, Question2y, Question2width, Question2height;
 float Question3x, Question3y, Question3width, Question3height;
-float Question4x, Question4y, Question4width, Question4height;
-float Question5x, Question5y, Question5width, Question5height;
-float Question6x, Question6y, Question6width, Question6height;
-float Question7x, Question7y, Question7width, Question7height;
-float Question8x, Question8y, Question8width, Question8height;
-float Question9x, Question9y, Question9width, Question9height;
-float Question10x, Question10y, Question10width, Question10height;
+float Ending1x, Ending1y, Ending1width, Ending1height;
+float Ending2x, Ending2y, Ending2width, Ending2height;
+float Ending3x, Ending3y, Ending3width, Ending3height;
+float Ending4x, Ending4y, Ending4width, Ending4height;
+float Ending5x, Ending5y, Ending5width, Ending5height;
+float Ending6x, Ending6y, Ending6width, Ending6height;
+float Ending7x, Ending7y, Ending7width, Ending7height;
 float xChoiceButton1, yChoiceButton1, widthChoiceButton1, heightChoiceButton1;
 float xChoiceButton2, yChoiceButton2, widthChoiceButton2, heightChoiceButton2;
 float xChoiceButton3, yChoiceButton3, widthChoiceButton3, heightChoiceButton3;
@@ -46,10 +48,10 @@ void setup() {
   size(1000, 800);
   appWidth = width;
   appHeight = height;
-  //if (appWidth > appHeight) ? :
   //
   String open = "/";
-  String imagesPath = open;
+  String up = "..";
+  String imagesPath = up + open;
   String Imagefolder = "Images";
   String ForestImage = "Forest Image.jpg";
   //
