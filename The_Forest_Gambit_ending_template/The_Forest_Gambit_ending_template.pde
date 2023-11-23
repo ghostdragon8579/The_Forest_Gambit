@@ -6,11 +6,13 @@ color resetDefaultInk=#FFFFFF;
 int appWidth, appHeight;
 int size;
 PImage BackgroundImage2;
+PFont QuestionFont;
 PFont ButtonFont;
 PFont TitleFont;
 String Title2 = "Congratulations You Won!";
+String Ending1Text = "You decided that the forest wasn't safe and decided to leave. You make it back home safe and sound.";
 String ResetButton1 = "Reset and try again?";
-float xRectBackground, yRectBackground, widthRectBackground, heightRectBackground;
+float Ending1Backgroundx, Ending1Backgroundy, Ending1Backgroundwidth, Ending1Backgroundheight;
 float Ending1x, Ending1y, Ending1width, Ending1height;
 float Title2x, Title2y, Title2width, Title2height;
 float ResetButton1x, ResetButton1y, ResetButton1width, ResetButton1height;
@@ -31,10 +33,10 @@ void setup() {
   String Imagefolder = "Images";
   String ForestImage = "Forest_Exit_Ending.jpg";
   //
-  xRectBackground = appWidth*0;
-  yRectBackground = appHeight*0;
-  widthRectBackground = appWidth-1;
-  heightRectBackground = appHeight-1;
+  Ending1Backgroundx = appWidth*0;
+  Ending1Backgroundy = appHeight*0;
+  Ending1Backgroundwidth = appWidth-1;
+  Ending1Backgroundheight = appHeight-1;
   BackgroundImage2 = loadImage(imagesPath + Imagefolder + open + ForestImage);
   //
   Ending1x = appWidth*1/5;
@@ -52,6 +54,7 @@ void setup() {
   ResetButton1width = appWidth*1/5;
   ResetButton1height = appHeight*2/13;;
   //
+  QuestionFont = createFont("Arial", 55);
   ButtonFont = createFont("Calibri", 55);
   TitleFont = createFont("Times New Roman Bold", 55);
   //
@@ -59,8 +62,8 @@ void setup() {
 //
 void draw() {
   //
-  rect(xRectBackground, yRectBackground, widthRectBackground, heightRectBackground);
-  image(BackgroundImage2, xRectBackground, yRectBackground, widthRectBackground, heightRectBackground);
+  rect(Ending1Backgroundx, Ending1Backgroundy, Ending1Backgroundwidth, Ending1Backgroundheight);
+  image(BackgroundImage2, Ending1Backgroundx, Ending1Backgroundy, Ending1Backgroundwidth, Ending1Backgroundheight);
   rect(Ending1x, Ending1y, Ending1width, Ending1height);
   rect(Title2x, Title2y, Title2width, Title2height);
   rect(ResetButton1x, ResetButton1y, ResetButton1width, ResetButton1height);
@@ -72,6 +75,13 @@ void draw() {
     rect(ResetButton1x, ResetButton1y, ResetButton1width, ResetButton1height);
     fill(resetDefaultInk);
   }
+  //
+  fill(Black);
+  textAlign(CENTER, CENTER); 
+  size = 50;
+  textFont(QuestionFont, 40); 
+  text(Ending1Text, Ending1x, Ending1y, Ending1width, Ending1height);
+  fill(resetDefaultInk);
   //
   fill(Black);
   textAlign(CENTER, CENTER); 
