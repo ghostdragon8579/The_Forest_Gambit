@@ -10,6 +10,13 @@ three in a forest. The first going straght through the forest, the second going 
 - [The Second Path]
 - [The Third Path]
 
+# Wolf Encounter Text Notes
+- [Wolf Encounter]
+- []
+- [Fight!]
+- [Flee!]
+- [Hide!]
+
 # Ending one Text Notes
 - [Congratulations You Won!]
 - [You decided that the forest wasn't safe and decided to leave. You make it back home safe and sound.]
