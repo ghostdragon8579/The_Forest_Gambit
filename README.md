@@ -1,12 +1,19 @@
 # The_Forest_Gambit
 
 # Text Notes/Text for The_Forest_Gambit
+
+Question set one
 - [The Forest Gambit]
 - [You are traveling back home after the war when the path splits into
 three in a forest. The first going straght through the forest, the second going around the edge, and the third going out of the forest. Which path do you choose?]
 - [The First Path]
 - [The Second Path]
 - [The Third Path]
+
+# Ending one Text Notes
+- [Congratulations!]
+- []
+- [Reset?]
 
 # Creaton Notes
 - [Create a Choose your own adventure]
