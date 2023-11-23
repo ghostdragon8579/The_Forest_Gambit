@@ -11,7 +11,7 @@ three in a forest. The first going straght through the forest, the second going 
 - [The Third Path]
 
 # Ending one Text Notes
-- [Congratulations!]
+- [Congratulations You Won!]
 - []
 - [Reset?]
 
