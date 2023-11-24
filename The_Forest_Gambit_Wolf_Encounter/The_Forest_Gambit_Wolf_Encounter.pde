@@ -36,13 +36,13 @@ void setup() {
   String up = "..";
   String imagesPath = up + open;
   String Imagefolder = "Images";
-  String ForestImage = "Wolf Image.jpg";
+  String WolfImage = "Wolf Image.jpg";
   //
   xRectBackground2 = appWidth*0;
   yRectBackground2 = appHeight*0;
   widthRectBackground2 = appWidth-1;
   heightRectBackground2 = appHeight-1;
-  WolfEncounter = loadImage(imagesPath + Imagefolder + open + ForestImage);
+  WolfEncounter = loadImage(imagesPath + Imagefolder + open + WolfImage);
   //
   Question2x = appWidth*1/5;
   Question2y = appHeight*1/4;
