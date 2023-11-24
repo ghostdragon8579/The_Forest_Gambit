@@ -1,6 +1,11 @@
 //Global Variables
 int size;
 int appWidth, appHeight;
+PImage WolfEncounter;
+String Title2 = "Wolf Encounter";
+String Fight = "Fight!";
+String Flee = "Flee!";
+String Hide = "Hide!";
 PFont TitleFont;
 PFont QuestionFont;
 PFont ButtonFont;
@@ -31,12 +36,13 @@ void setup() {
   String up = "..";
   String imagesPath = up + open;
   String Imagefolder = "Images";
-  String ForestImage = "Forest Image.jpg";
+  String ForestImage = "Wolf Image.jpg";
   //
   xRectBackground2 = appWidth*0;
   yRectBackground2 = appHeight*0;
   widthRectBackground2 = appWidth-1;
   heightRectBackground2 = appHeight-1;
+  WolfEncounter = loadImage(imagesPath + Imagefolder + open + ForestImage);
   //
   Question2x = appWidth*1/5;
   Question2y = appHeight*1/4;
@@ -63,16 +69,49 @@ void setup() {
   widthChoiceButton6 = appWidth*1/6;
   heightChoiceButton6 = heightChoiceButton4;
   //
+  QuestionFont = createFont("Arial", 55);
+  ButtonFont = createFont("Calibri", 55);
+  TitleFont = createFont("Times New Roman Bold", 55);
+  //
 } //End setup
 //
 void draw() {
   //
   rect(xRectBackground2, yRectBackground2, widthRectBackground2, heightRectBackground2);
+  image(WolfEncounter, xRectBackground2, yRectBackground2, widthRectBackground2, heightRectBackground2);
   rect(Title2x, Title2y, Title2width, Title2height);
   rect(Question2x, Question2y, Question2width, Question2height);
   rect(xChoiceButton4, yChoiceButton4, widthChoiceButton4, heightChoiceButton4);
   rect(xChoiceButton5, yChoiceButton5, widthChoiceButton5, heightChoiceButton5);
   rect(xChoiceButton6, yChoiceButton6, widthChoiceButton6, heightChoiceButton6);
+  //
+  fill(DarkGreen);
+  textAlign(CENTER, CENTER); 
+  size = 50;
+  textFont(TitleFont, 60); 
+  text(Title2, Title2x, Title2y, Title2width, Title2height);
+  fill(resetDefaultInk);
+  //
+  fill(Black);
+  textAlign(CENTER, CENTER); 
+  size = 50;
+  textFont(ButtonFont, 50); 
+  text(Fight, xChoiceButton4, yChoiceButton4, widthChoiceButton4, heightChoiceButton4);
+  fill(resetDefaultInk);
+  //
+  fill(Black);
+  textAlign(CENTER, CENTER); 
+  size = 50;
+  textFont(ButtonFont, 50); 
+  text(Flee, xChoiceButton5, yChoiceButton5, widthChoiceButton5, heightChoiceButton5);
+  fill(resetDefaultInk);
+  //
+  fill(Black);
+  textAlign(CENTER, CENTER); 
+  size = 50;
+  textFont(ButtonFont, 50); 
+  text(Hide, xChoiceButton6, yChoiceButton6, widthChoiceButton6, heightChoiceButton6);
+  fill(resetDefaultInk);
   //
 } //End draw
 //
