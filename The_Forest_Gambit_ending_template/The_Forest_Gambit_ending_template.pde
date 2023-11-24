@@ -5,7 +5,7 @@ color Red=#DE001E;
 color resetDefaultInk=#FFFFFF;
 int appWidth, appHeight;
 int size;
-PImage BackgroundImage4;
+PImage BackgroundImage2;
 PFont QuestionFont;
 PFont ButtonFont;
 PFont TitleFont;
@@ -31,13 +31,13 @@ void setup() {
   String up = "..";
   String imagesPath = up + open;
   String Imagefolder = "Images";
-  String ForestImage = "Forest_Exit_Ending.jpg";
+  String ForestImage2 = "Forest_Exit_Ending.jpg";
   //
   Ending1Backgroundx = appWidth*0;
   Ending1Backgroundy = appHeight*0;
   Ending1Backgroundwidth = appWidth-1;
   Ending1Backgroundheight = appHeight-1;
-  BackgroundImage4 = loadImage(imagesPath + Imagefolder + open + ForestImage);
+  BackgroundImage2 = loadImage(imagesPath + Imagefolder + open + ForestImage2);
   //
   Ending1x = appWidth*1/5;
   Ending1y = appHeight*1/4;
@@ -63,7 +63,7 @@ void setup() {
 void draw() {
   //
   rect(Ending1Backgroundx, Ending1Backgroundy, Ending1Backgroundwidth, Ending1Backgroundheight);
-  image(BackgroundImage4, Ending1Backgroundx, Ending1Backgroundy, Ending1Backgroundwidth, Ending1Backgroundheight);
+  image(BackgroundImage2, Ending1Backgroundx, Ending1Backgroundy, Ending1Backgroundwidth, Ending1Backgroundheight);
   rect(Ending1x, Ending1y, Ending1width, Ending1height);
   rect(Title4x, Title4y, Title4width, Title4height);
   rect(ResetButton1x, ResetButton1y, ResetButton1width, ResetButton1height);
