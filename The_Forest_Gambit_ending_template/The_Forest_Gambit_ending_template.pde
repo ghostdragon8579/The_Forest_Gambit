@@ -14,7 +14,7 @@ String Ending1Text = "You decided that the forest wasn't safe and decided to lea
 String ResetButton1 = "Reset and try again?";
 float Ending1Backgroundx, Ending1Backgroundy, Ending1Backgroundwidth, Ending1Backgroundheight;
 float Ending1x, Ending1y, Ending1width, Ending1height;
-float Title2x, Title2y, Title2width, Title2height;
+float Title4x, Title4y, Title4width, Title4height;
 float ResetButton1x, ResetButton1y, ResetButton1width, ResetButton1height;
 //
 void setup() {
@@ -44,10 +44,10 @@ void setup() {
   Ending1width = appWidth*3/5;
   Ending1height = appHeight*5/13;
   //
-  Title2x = appWidth*1/5;
-  Title2y = appHeight*1/20;
-  Title2width = appWidth*3/5;
-  Title2height = appHeight*2/13;
+  Title4x = appWidth*1/5;
+  Title4y = appHeight*1/20;
+  Title4width = appWidth*3/5;
+  Title4height = appHeight*2/13;
   //
   ResetButton1x = appWidth*2/5;
   ResetButton1y = appHeight*2/3;
@@ -65,7 +65,7 @@ void draw() {
   rect(Ending1Backgroundx, Ending1Backgroundy, Ending1Backgroundwidth, Ending1Backgroundheight);
   image(BackgroundImage2, Ending1Backgroundx, Ending1Backgroundy, Ending1Backgroundwidth, Ending1Backgroundheight);
   rect(Ending1x, Ending1y, Ending1width, Ending1height);
-  rect(Title2x, Title2y, Title2width, Title2height);
+  rect(Title4x, Title4y, Title4width, Title4height);
   rect(ResetButton1x, ResetButton1y, ResetButton1width, ResetButton1height);
   //
   color hoverOverColor=resetDefaultInk;
