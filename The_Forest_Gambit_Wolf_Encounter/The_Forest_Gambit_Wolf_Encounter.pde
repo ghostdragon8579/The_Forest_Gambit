@@ -56,18 +56,23 @@ void setup() {
   xChoiceButton5 = appWidth*3/7-appWidth/75;
   yChoiceButton5 = yChoiceButton4;
   widthChoiceButton5 = appWidth*1/6;
-  heightChoiceButton5 = yChoiceButton4;
+  heightChoiceButton5 = heightChoiceButton4;
   //
   xChoiceButton6 = appWidth*2/3;
   yChoiceButton6 = yChoiceButton4;
   widthChoiceButton6 = appWidth*1/6;
-  heightChoiceButton6 = yChoiceButton4;
+  heightChoiceButton6 = heightChoiceButton4;
   //
 } //End setup
 //
 void draw() {
   //
   rect(xRectBackground2, yRectBackground2, widthRectBackground2, heightRectBackground2);
+  rect(Title2x, Title2y, Title2width, Title2height);
+  rect(Question2x, Question2y, Question2width, Question2height);
+  rect(xChoiceButton4, yChoiceButton4, widthChoiceButton4, heightChoiceButton4);
+  rect(xChoiceButton5, yChoiceButton5, widthChoiceButton5, heightChoiceButton5);
+  rect(xChoiceButton6, yChoiceButton6, widthChoiceButton6, heightChoiceButton6);
   //
 } //End draw
 //
