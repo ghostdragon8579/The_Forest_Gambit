@@ -5,11 +5,11 @@ color Red=#DE001E;
 color resetDefaultInk=#FFFFFF;
 int appWidth, appHeight;
 int size;
-PImage BackgroundImage2;
+PImage BackgroundImage4;
 PFont QuestionFont;
 PFont ButtonFont;
 PFont TitleFont;
-String Title2 = "Congratulations You Won!";
+String Title4 = "Congratulations You Won!";
 String Ending1Text = "You decided that the forest wasn't safe and decided to leave. You make it back home safe and sound.";
 String ResetButton1 = "Reset and try again?";
 float Ending1Backgroundx, Ending1Backgroundy, Ending1Backgroundwidth, Ending1Backgroundheight;
@@ -37,7 +37,7 @@ void setup() {
   Ending1Backgroundy = appHeight*0;
   Ending1Backgroundwidth = appWidth-1;
   Ending1Backgroundheight = appHeight-1;
-  BackgroundImage2 = loadImage(imagesPath + Imagefolder + open + ForestImage);
+  BackgroundImage4 = loadImage(imagesPath + Imagefolder + open + ForestImage);
   //
   Ending1x = appWidth*1/5;
   Ending1y = appHeight*1/4;
@@ -63,7 +63,7 @@ void setup() {
 void draw() {
   //
   rect(Ending1Backgroundx, Ending1Backgroundy, Ending1Backgroundwidth, Ending1Backgroundheight);
-  image(BackgroundImage2, Ending1Backgroundx, Ending1Backgroundy, Ending1Backgroundwidth, Ending1Backgroundheight);
+  image(BackgroundImage4, Ending1Backgroundx, Ending1Backgroundy, Ending1Backgroundwidth, Ending1Backgroundheight);
   rect(Ending1x, Ending1y, Ending1width, Ending1height);
   rect(Title4x, Title4y, Title4width, Title4height);
   rect(ResetButton1x, ResetButton1y, ResetButton1width, ResetButton1height);
@@ -94,7 +94,7 @@ void draw() {
   textAlign(CENTER, CENTER); 
   size = 50;
   textFont(TitleFont, 50); 
-  text(Title2, Title2x, Title2y, Title2width, Title2height);
+  text(Title4, Title4x, Title4y, Title4width, Title4height);
   fill(resetDefaultInk);
   //
 } //End draw
