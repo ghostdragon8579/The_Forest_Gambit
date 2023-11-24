@@ -3,7 +3,7 @@ int size;
 int appWidth, appHeight;
 PImage BanditImage2;
 String Title3 = "Bandit Encounter";
-String Story3 = "Text";
+String Story3 = "As you are walking along the path you see people running among the trees. Then a large man with a club steps out of the trees in front of you. He says to you give us you money and you may pass. What do you do?";
 String Fight = "Fight!";
 String Flee = "Flee!";
 String Parlay = "Parlay!";
