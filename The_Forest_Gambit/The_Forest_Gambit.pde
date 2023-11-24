@@ -1,12 +1,15 @@
 //Global Variables
 int appWidth, appHeight;
 int size;
+String ResetButton1 = "Reset and try again?";
 String Title1 = "The Forest Gambit";
 String Title2 = "Wolf Encounter";
 String Title3 = "Bandit Encounter";
+String Title4 = "Congratulations You Won!";
 String Story1 = "You are traveling back home after the war when the path splits into three in a forest. The first going straght through the forest, the second going around the edge, and the third going out of the forest. Which path do you choose?";
 String Story2 = "As you are walking along the path you hear howling in the distance. Wolves are on the hunt and you are their pray. What do you do?";
 String Story3 = "As you are walking along the path you see people running among the trees. Then a large man with a club steps out of the trees in front of you. He says to you give us you money and you may pass. What do you do?";
+String Ending1Text = "You decided that the forest wasn't safe and decided to leave. You make it back home safe and sound.";
 String Path1 = "The First path";
 String Path2 = "The Second path";
 String Path3 = "The Third path";
@@ -18,6 +21,7 @@ PFont TitleFont;
 PFont QuestionFont;
 PFont ButtonFont;
 PImage BackgroundImage;
+PImage BackgroundImage2;
 PImage WolfImage2;
 PImage BanditImage2;
 color Red=#DE001E;
@@ -26,12 +30,15 @@ color Black=#000000;
 color Green=#00DE01;
 color DarkGreen=#02B703;
 color resetDefaultInk=#FFFFFF;
+float ResetButton1x, ResetButton1y, ResetButton1width, ResetButton1height;
 float xRectBackground, yRectBackground, widthRectBackground, heightRectBackground;
 float xRectBackground2, yRectBackground2, widthRectBackground2, heightRectBackground2;
 float xRectBackground3, yRectBackground3, widthRectBackground3, heightRectBackground3;
+float Ending1Backgroundx, Ending1Backgroundy, Ending1Backgroundwidth, Ending1Backgroundheight;
 float Title1x, Title1y, Title1width, Title1height;
 float Title2x, Title2y, Title2width, Title2height;
 float Title3x, Title3y, Title3width, Title3height;
+float Title4x, Title4y, Title4width, Title4height;
 float Question1x, Question1y, Question1width, Question1height;
 float Question2x, Question2y, Question2width, Question2height;
 float Question3x, Question3y, Question3width, Question3height;
@@ -70,6 +77,7 @@ void setup() {
   String imagesPath = up + open;
   String Imagefolder = "Images";
   String ForestImage = "Forest Image.jpg";
+  String ForestImage2 = "Forest_Exit_Ending.jpg";
   String WolfImage = "Wolf Image.jpg";
   String BanditImage = "Thieves Forest.jpg";
   //
@@ -91,6 +99,12 @@ void setup() {
   heightRectBackground3 = appHeight-1;
   BanditImage2 = loadImage(imagesPath + Imagefolder + open + BanditImage);
   //
+  Ending1Backgroundx = appWidth*0;
+  Ending1Backgroundy = appHeight*0;
+  Ending1Backgroundwidth = appWidth-1;
+  Ending1Backgroundheight = appHeight-1;
+  BackgroundImage2 = loadImage(imagesPath + Imagefolder + open + ForestImage2);
+  //
   Question1x = appWidth*1/5;
   Question1y = appHeight*1/4;
   Question1width = appWidth*3/5;
@@ -106,6 +120,11 @@ void setup() {
   Question3width = appWidth*3/5;
   Question3height = appHeight*4/13;
   //
+  Ending1x = appWidth*1/5;
+  Ending1y = appHeight*1/4;
+  Ending1width = appWidth*3/5;
+  Ending1height = appHeight*5/13;
+  //
   Title1x = Question1x;
   Title1y = appHeight*1/20;
   Title1width = Question1width;
@@ -120,6 +139,11 @@ void setup() {
   Title3y = appHeight*1/20;
   Title3width = Question3width;
   Title3height = appHeight*2/13;
+  //
+  Title4x = appWidth*1/5;
+  Title4y = appHeight*1/20;
+  Title4width = appWidth*3/5;
+  Title4height = appHeight*2/13;
   //
   xChoiceButton1 = appWidth*1/6;
   yChoiceButton1 = appHeight*2/3;
@@ -166,6 +190,11 @@ void setup() {
   widthChoiceButton9 = appWidth*1/6;
   heightChoiceButton9 = heightChoiceButton7;
   //
+  ResetButton1x = appWidth*2/5;
+  ResetButton1y = appHeight*2/3;
+  ResetButton1width = appWidth*1/5;
+  ResetButton1height = appHeight*2/13;;
+  //
   QuestionFont = createFont("Arial", 55);
   ButtonFont = createFont("Calibri", 55);
   TitleFont = createFont("Times New Roman Bold", 55);
@@ -177,6 +206,7 @@ void draw() {
   if (StoryEnding1==false && StoryWolfEncounter==false && StoryBanditEcounter==false) EnteringTheForest ();
   if (StoryEnding1==false && StoryWolfEncounter==true && StoryBanditEcounter==false) WolfEncounter ();
   if (StoryEnding1==false && StoryWolfEncounter==false && StoryBanditEcounter==true) BanditEncounter ();
+  if (StoryEnding1==true && StoryWolfEncounter==false && StoryBanditEcounter==false) LeftTheForest ();
   //
 } //End draw
 //
@@ -186,6 +216,7 @@ void mousePressed() {
   //
   if (mouseX>xChoiceButton1 && mouseX<xChoiceButton1+widthChoiceButton1 && mouseY>yChoiceButton1 && mouseY<yChoiceButton1+heightChoiceButton1) StoryWolfEncounter=true;
   if (mouseX>xChoiceButton2 && mouseX<xChoiceButton2+widthChoiceButton2 && mouseY>yChoiceButton2 && mouseY<yChoiceButton2+heightChoiceButton2) StoryBanditEcounter=true;
+  if (mouseX>xChoiceButton3 && mouseX<xChoiceButton3+widthChoiceButton3 && mouseY>yChoiceButton3 && mouseY<yChoiceButton3+heightChoiceButton3) StoryEnding1=true;
   //
 } //End mousePressed
 //
