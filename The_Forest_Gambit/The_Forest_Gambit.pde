@@ -88,6 +88,7 @@ void setup() {
   heightChoiceButton3 = heightChoiceButton1;
   //
   QuestionFont = createFont("Arial", 55);
+  ButtonFont = createFont("Calibri", 55);
   TitleFont = createFont("Times New Roman Bold", 55);
   //
 } //End setup
@@ -137,21 +138,21 @@ void draw() {
   fill(Black);
   textAlign(CENTER, CENTER); 
   size = 50;
-  textFont(QuestionFont, 35); 
+  textFont(ButtonFont, 35); 
   text(Path1, xChoiceButton1, yChoiceButton1, widthChoiceButton1, heightChoiceButton1);
   fill(resetDefaultInk);
   //
   fill(Black);
   textAlign(CENTER, CENTER); 
   size = 50;
-  textFont(QuestionFont, 35); 
+  textFont(ButtonFont, 35); 
   text(Path2, xChoiceButton2, yChoiceButton2, widthChoiceButton2, heightChoiceButton2);
   fill(resetDefaultInk);
   //
   fill(Black);
   textAlign(CENTER, CENTER); 
   size = 50;
-  textFont(QuestionFont, 35); 
+  textFont(ButtonFont, 35); 
   text(Path3, xChoiceButton3, yChoiceButton3, widthChoiceButton3, heightChoiceButton3);
   fill(resetDefaultInk);
   //
