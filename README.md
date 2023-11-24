@@ -16,6 +16,13 @@ Wolves are on the hunt and you are their pray. What do you do?]
 - [Flee!]
 - [Hide!]
 
+# Bandit Encounter Text Notes
+- [Bandit Encounter]
+- []
+- [Fight!]
+- [Flee!]
+- [Parlay!]
+
 # Ending one Text Notes
 - [Congratulations You Won!]
 - [You decided that the forest wasn't safe and decided to leave. You make it back home safe and sound.]
