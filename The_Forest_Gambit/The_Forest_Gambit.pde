@@ -17,6 +17,7 @@ color Green=#00DE01;
 color DarkGreen=#02B703;
 color resetDefaultInk=#FFFFFF;
 float xRectBackground, yRectBackground, widthRectBackground, heightRectBackground;
+float xRectBackground2, yRectBackground2, widthRectBackground2, heightRectBackground2;
 float Title1x, Title1y, Title1width, Title1height;
 float Title2x, Title2y, Title2width, Title2height;
 float Question1x, Question1y, Question1width, Question1height;
