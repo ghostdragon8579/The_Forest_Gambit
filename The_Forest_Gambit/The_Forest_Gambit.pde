@@ -26,6 +26,7 @@ float xRectBackground, yRectBackground, widthRectBackground, heightRectBackgroun
 float xRectBackground2, yRectBackground2, widthRectBackground2, heightRectBackground2;
 float Title1x, Title1y, Title1width, Title1height;
 float Title2x, Title2y, Title2width, Title2height;
+float Title3x, Title3y, Title3width, Title3height;
 float Question1x, Question1y, Question1width, Question1height;
 float Question2x, Question2y, Question2width, Question2height;
 float Question3x, Question3y, Question3width, Question3height;
@@ -47,7 +48,7 @@ float xChoiceButton8, yChoiceButton8, widthChoiceButton8, heightChoiceButton8;
 float xChoiceButton9, yChoiceButton9, widthChoiceButton9, heightChoiceButton9;
 Boolean StoryEnding1=false;
 Boolean StoryWolfEncounter=false;
-Boolean BanditEcounter=false;
+Boolean StoryBanditEcounter=false;
 //
 void setup() {
 //
@@ -136,8 +137,9 @@ void setup() {
 //
 void draw() {
   //
-  if (StoryEnding1==false && StoryWolfEncounter==false && BanditEcounter==false) EnteringTheForest ();
-  if (StoryEnding1==false && StoryWolfEncounter==true && BanditEcounter==false) WolfEncounter ();
+  if (StoryEnding1==false && StoryWolfEncounter==false && StoryBanditEcounter==false) EnteringTheForest ();
+  if (StoryEnding1==false && StoryWolfEncounter==true && StoryBanditEcounter==false) WolfEncounter ();
+  //if (StoryEnding1==false && StoryWolfEncounter==false && StoryBanditEcounter==true) BanditEncounter ();
   //
 } //End draw
 //
@@ -146,6 +148,7 @@ void keyPressed() {} //End keyPressed
 void mousePressed() {
   //
   if (mouseX>xChoiceButton1 && mouseX<xChoiceButton1+widthChoiceButton1 && mouseY>yChoiceButton1 && mouseY<yChoiceButton1+heightChoiceButton1) StoryWolfEncounter=true;
+  if (mouseX>xChoiceButton2 && mouseX<xChoiceButton2+widthChoiceButton2 && mouseY>yChoiceButton2 && mouseY<yChoiceButton2+heightChoiceButton2) StoryBanditEcounter=true;
   //
 } //End mousePressed
 //
