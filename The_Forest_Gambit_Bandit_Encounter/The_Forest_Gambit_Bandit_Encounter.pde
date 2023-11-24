@@ -16,7 +16,7 @@ color Green=#00DE01;
 color DarkGreen=#02B703;
 color resetDefaultInk=#FFFFFF;
 float xRectBackground3, yRectBackground3, widthRectBackground3, heightRectBackground3;
-float Question2x, Question2y, Question2width, Question2height;
+float Question3x, Question3y, Question3width, Question3height;
 float Title3x, Title3y, Title3width, Title3height;
 float xChoiceButton7, yChoiceButton7, widthChoiceButton7, heightChoiceButton7;
 float xChoiceButton8, yChoiceButton8, widthChoiceButton8, heightChoiceButton8;
@@ -36,7 +36,7 @@ void setup() {
   String up = "..";
   String imagesPath = up + open;
   String Imagefolder = "Images";
-  String BanditImage = "Wolf Image.jpg";
+  String BanditImage = "Thieves Forest.jpg";
   //
   xRectBackground3 = appWidth*0;
   yRectBackground3 = appHeight*0;
@@ -44,14 +44,14 @@ void setup() {
   heightRectBackground3 = appHeight-1;
   BanditImage2 = loadImage(imagesPath + Imagefolder + open + BanditImage);
   //
-  Question2x = appWidth*1/5;
-  Question2y = appHeight*1/4;
-  Question2width = appWidth*3/5;
-  Question2height = appHeight*4/13;
+  Question3x = appWidth*1/5;
+  Question3y = appHeight*1/4;
+  Question3width = appWidth*3/5;
+  Question3height = appHeight*4/13;
   //
-  Title3x = Question2x;
+  Title3x = Question3x;
   Title3y = appHeight*1/20;
-  Title3width = Question2width;
+  Title3width = Question3width;
   Title3height = appHeight*2/13;
   //
   xChoiceButton7 = appWidth*1/6;
@@ -80,7 +80,7 @@ void draw() {
   rect(xRectBackground3, yRectBackground3, widthRectBackground3, heightRectBackground3);
   image(BanditImage2, xRectBackground3, yRectBackground3, widthRectBackground3, heightRectBackground3);
   rect(Title3x, Title3y, Title3width, Title3height);
-  rect(Question2x, Question2y, Question2width, Question2height);
+  rect(Question3x, Question3y, Question3width, Question3height);
   rect(xChoiceButton7, yChoiceButton7, widthChoiceButton7, heightChoiceButton7);
   rect(xChoiceButton8, yChoiceButton8, widthChoiceButton8, heightChoiceButton8);
   rect(xChoiceButton9, yChoiceButton9, widthChoiceButton9, heightChoiceButton9);
@@ -114,7 +114,7 @@ void draw() {
   textAlign(CENTER, CENTER); 
   size = 50;
   textFont(QuestionFont, 25); 
-  text(Story3, Question2x, Question2y, Question2width, Question2height);
+  text(Story3, Question3x, Question3y, Question3width, Question3height);
   fill(resetDefaultInk);
   //
   fill(Black);
