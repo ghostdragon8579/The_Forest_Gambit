@@ -3,7 +3,7 @@ int size;
 int appWidth, appHeight;
 PImage WolfEncounter;
 String Title2 = "Wolf Encounter";
-String Question2 = "";
+String Story2 = "As you are walking along the path you hear howling in the distance. Wolves are on the hunt and you are their pray. What do you do?";
 String Fight = "Fight!";
 String Flee = "Flee!";
 String Hide = "Hide!";
@@ -108,6 +108,13 @@ void draw() {
   size = 50;
   textFont(TitleFont, 60); 
   text(Title2, Title2x, Title2y, Title2width, Title2height);
+  fill(resetDefaultInk);
+  //
+  fill(Black);
+  textAlign(CENTER, CENTER); 
+  size = 50;
+  textFont(QuestionFont, 25); 
+  text(Story2, Question2x, Question2y, Question2width, Question2height);
   fill(resetDefaultInk);
   //
   fill(Black);

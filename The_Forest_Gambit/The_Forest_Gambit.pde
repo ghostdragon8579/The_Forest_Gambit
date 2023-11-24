@@ -2,14 +2,20 @@
 int appWidth, appHeight;
 int size;
 String Title1 = "The Forest Gambit";
+String Title2 = "Wolf Encounter";
 String Story1 = "You are traveling back home after the war when the path splits into three in a forest. The first going straght through the forest, the second going around the edge, and the third going out of the forest. Which path do you choose?";
+String Story2 = "As you are walking along the path you hear howling in the distance. Wolves are on the hunt and you are their pray. What do you do?";
 String Path1 = "The First path";
 String Path2 = "The Second path";
 String Path3 = "The Third path";
+String Fight = "Fight!";
+String Flee = "Flee!";
+String Hide = "Hide!";
 PFont TitleFont;
 PFont QuestionFont;
 PFont ButtonFont;
 PImage BackgroundImage;
+PImage WolfImage2;
 color Red=#DE001E;
 color Gray=#AFAFAF;
 color Black=#000000;
@@ -39,8 +45,8 @@ float xChoiceButton6, yChoiceButton6, widthChoiceButton6, heightChoiceButton6;
 float xChoiceButton7, yChoiceButton7, widthChoiceButton7, heightChoiceButton7;
 float xChoiceButton8, yChoiceButton8, widthChoiceButton8, heightChoiceButton8;
 float xChoiceButton9, yChoiceButton9, widthChoiceButton9, heightChoiceButton9;
-Boolean Ending1=false;
-Boolean WolfEncounter=false;
+Boolean StoryEnding1=false;
+Boolean StoryWolfEncounter=false;
 Boolean BanditEcounter=false;
 //
 void setup() {
@@ -58,6 +64,7 @@ void setup() {
   String imagesPath = up + open;
   String Imagefolder = "Images";
   String ForestImage = "Forest Image.jpg";
+  String WolfImage = "Wolf Image.jpg";
   //
   xRectBackground = appWidth*0;
   yRectBackground = appHeight*0;
@@ -65,15 +72,31 @@ void setup() {
   heightRectBackground = appHeight-1;
   BackgroundImage = loadImage(imagesPath + Imagefolder + open + ForestImage);
   //
+  xRectBackground2 = appWidth*0;
+  yRectBackground2 = appHeight*0;
+  widthRectBackground2 = appWidth-1;
+  heightRectBackground2 = appHeight-1;
+  WolfImage2 = loadImage(imagesPath + Imagefolder + open + WolfImage);
+  //
   Question1x = appWidth*1/5;
   Question1y = appHeight*1/4;
   Question1width = appWidth*3/5;
   Question1height = appHeight*4/13;
   //
+  Question2x = appWidth*1/5;
+  Question2y = appHeight*1/4;
+  Question2width = appWidth*3/5;
+  Question2height = appHeight*4/13;
+  //
   Title1x = Question1x;
   Title1y = appHeight*1/20;
   Title1width = Question1width;
   Title1height = appHeight*2/13;
+  //
+  Title2x = Question2x;
+  Title2y = appHeight*1/20;
+  Title2width = Question2width;
+  Title2height = appHeight*2/13;
   //
   xChoiceButton1 = appWidth*1/6;
   yChoiceButton1 = appHeight*2/3;
@@ -90,6 +113,21 @@ void setup() {
   widthChoiceButton3 = appWidth*1/6;
   heightChoiceButton3 = heightChoiceButton1;
   //
+  xChoiceButton4 = appWidth*1/6;
+  yChoiceButton4 = appHeight*2/3;
+  widthChoiceButton4 = appWidth*1/6;
+  heightChoiceButton4 = appHeight*2/9;
+  //
+  xChoiceButton5 = appWidth*3/7-appWidth/75;
+  yChoiceButton5 = yChoiceButton4;
+  widthChoiceButton5 = appWidth*1/6;
+  heightChoiceButton5 = heightChoiceButton4;
+  //
+  xChoiceButton6 = appWidth*2/3;
+  yChoiceButton6 = yChoiceButton4;
+  widthChoiceButton6 = appWidth*1/6;
+  heightChoiceButton6 = heightChoiceButton4;
+  //
   QuestionFont = createFont("Arial", 55);
   ButtonFont = createFont("Calibri", 55);
   TitleFont = createFont("Times New Roman Bold", 55);
@@ -98,8 +136,8 @@ void setup() {
 //
 void draw() {
   //
-  if (Ending1==false && WolfEncounter==false && BanditEcounter==false) EnteringTheForest ();
-  //if (Ending1==false && WolfEncounter==true && BanditEcounter==false) WolfEncounter ();
+  if (StoryEnding1==false && StoryWolfEncounter==false && BanditEcounter==false) EnteringTheForest ();
+  if (StoryEnding1==false && StoryWolfEncounter==true && BanditEcounter==false) WolfEncounter ();
   //
 } //End draw
 //
@@ -107,7 +145,7 @@ void keyPressed() {} //End keyPressed
 //
 void mousePressed() {
   //
-  if (mouseX>xChoiceButton1 && mouseX<xChoiceButton1+widthChoiceButton1 && mouseY>yChoiceButton1 && mouseY<yChoiceButton1+heightChoiceButton1) WolfEncounter=true;
+  if (mouseX>xChoiceButton1 && mouseX<xChoiceButton1+widthChoiceButton1 && mouseY>yChoiceButton1 && mouseY<yChoiceButton1+heightChoiceButton1) StoryWolfEncounter=true;
   //
 } //End mousePressed
 //
