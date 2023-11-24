@@ -15,7 +15,7 @@ color Black=#000000;
 color Green=#00DE01;
 color DarkGreen=#02B703;
 color resetDefaultInk=#FFFFFF;
-float xRectBackground2, yRectBackground2, widthRectBackground2, heightRectBackground2;
+float xRectBackground3, yRectBackground3, widthRectBackground3, heightRectBackground3;
 float Question2x, Question2y, Question2width, Question2height;
 float Title3x, Title3y, Title3width, Title3height;
 float xChoiceButton7, yChoiceButton7, widthChoiceButton7, heightChoiceButton7;
@@ -38,10 +38,10 @@ void setup() {
   String Imagefolder = "Images";
   String BanditImage = "Wolf Image.jpg";
   //
-  xRectBackground2 = appWidth*0;
-  yRectBackground2 = appHeight*0;
-  widthRectBackground2 = appWidth-1;
-  heightRectBackground2 = appHeight-1;
+  xRectBackground3 = appWidth*0;
+  yRectBackground3 = appHeight*0;
+  widthRectBackground3 = appWidth-1;
+  heightRectBackground3 = appHeight-1;
   BanditImage2 = loadImage(imagesPath + Imagefolder + open + BanditImage);
   //
   Question2x = appWidth*1/5;
@@ -77,8 +77,8 @@ void setup() {
 //
 void draw() {
   //
-  rect(xRectBackground2, yRectBackground2, widthRectBackground2, heightRectBackground2);
-  image(BanditImage2, xRectBackground2, yRectBackground2, widthRectBackground2, heightRectBackground2);
+  rect(xRectBackground3, yRectBackground3, widthRectBackground3, heightRectBackground3);
+  image(BanditImage2, xRectBackground3, yRectBackground3, widthRectBackground3, heightRectBackground3);
   rect(Title3x, Title3y, Title3width, Title3height);
   rect(Question2x, Question2y, Question2width, Question2height);
   rect(xChoiceButton7, yChoiceButton7, widthChoiceButton7, heightChoiceButton7);
