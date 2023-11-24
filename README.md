@@ -18,7 +18,8 @@ Wolves are on the hunt and you are their pray. What do you do?]
 
 # Bandit Encounter Text Notes
 - [Bandit Encounter]
-- []
+- [As you are walking along the path you see people running among the
+trees. Then a large man with a club steps out of the trees in front of you. He says give us you money and you may pass. What do you do?]
 - [Fight!]
 - [Flee!]
 - [Parlay!]
