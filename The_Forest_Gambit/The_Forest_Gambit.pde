@@ -22,7 +22,7 @@ PFont QuestionFont;
 PFont ButtonFont;
 PImage BackgroundImage;
 PImage BackgroundImage2;
-PImage WolfImage2;
+PImage WolfPicture;
 PImage BanditImage2;
 color Red=#DE001E;
 color Gray=#AFAFAF;
@@ -79,6 +79,7 @@ void setup() {
   String ForestImage = "Forest Image.jpg";
   String ForestImage2 = "Forest_Exit_Ending.jpg";
   String WolfImage = "Wolf Image.jpg";
+  String WolfImage2 = "";
   String BanditImage = "Thieves Forest.jpg";
   //
   xRectBackground = appWidth*0;
@@ -91,7 +92,7 @@ void setup() {
   yRectBackground2 = appHeight*0;
   widthRectBackground2 = appWidth-1;
   heightRectBackground2 = appHeight-1;
-  WolfImage2 = loadImage(imagesPath + Imagefolder + open + WolfImage);
+  WolfPicture = loadImage(imagesPath + Imagefolder + open + WolfImage);
   //
   xRectBackground3 = appWidth*0;
   yRectBackground3 = appHeight*0;

@@ -1,7 +1,7 @@
 void WolfEncounter () {
   //
   rect(xRectBackground2, yRectBackground2, widthRectBackground2, heightRectBackground2);
-  image(WolfImage2, xRectBackground2, yRectBackground2, widthRectBackground2, heightRectBackground2);
+  image(WolfPicture, xRectBackground2, yRectBackground2, widthRectBackground2, heightRectBackground2);
   rect(Title2x, Title2y, Title2width, Title2height);
   rect(Question2x, Question2y, Question2width, Question2height);
   rect(xChoiceButton4, yChoiceButton4, widthChoiceButton4, heightChoiceButton4);
