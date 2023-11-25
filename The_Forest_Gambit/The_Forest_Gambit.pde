@@ -23,6 +23,7 @@ PFont ButtonFont;
 PImage BackgroundImage;
 PImage BackgroundImage2;
 PImage WolfPicture;
+PImage WolfFace;
 PImage BanditImage2;
 color Red=#DE001E;
 color Gray=#AFAFAF;
@@ -79,32 +80,33 @@ void setup() {
   String ForestImage = "Forest Image.jpg";
   String ForestImage2 = "Forest_Exit_Ending.jpg";
   String WolfImage = "Wolf Image.jpg";
-  String WolfImage2 = "";
+  String WolfImage2 = "Wolf Face.jpg";
   String BanditImage = "Thieves Forest.jpg";
+  BackgroundImage = loadImage(imagesPath + Imagefolder + open + ForestImage);
+  WolfPicture = loadImage(imagesPath + Imagefolder + open + WolfImage);
+  WolfFace = loadImage(imagesPath + Imagefolder + open + WolfImage2);
+  BanditImage2 = loadImage(imagesPath + Imagefolder + open + BanditImage);
+  BackgroundImage2 = loadImage(imagesPath + Imagefolder + open + ForestImage2);
   //
   xRectBackground = appWidth*0;
   yRectBackground = appHeight*0;
   widthRectBackground = appWidth-1;
   heightRectBackground = appHeight-1;
-  BackgroundImage = loadImage(imagesPath + Imagefolder + open + ForestImage);
   //
   xRectBackground2 = appWidth*0;
   yRectBackground2 = appHeight*0;
   widthRectBackground2 = appWidth-1;
   heightRectBackground2 = appHeight-1;
-  WolfPicture = loadImage(imagesPath + Imagefolder + open + WolfImage);
   //
   xRectBackground3 = appWidth*0;
   yRectBackground3 = appHeight*0;
   widthRectBackground3 = appWidth-1;
   heightRectBackground3 = appHeight-1;
-  BanditImage2 = loadImage(imagesPath + Imagefolder + open + BanditImage);
   //
   Ending1Backgroundx = appWidth*0;
   Ending1Backgroundy = appHeight*0;
   Ending1Backgroundwidth = appWidth-1;
   Ending1Backgroundheight = appHeight-1;
-  BackgroundImage2 = loadImage(imagesPath + Imagefolder + open + ForestImage2);
   //
   Question1x = appWidth*1/5;
   Question1y = appHeight*1/4;
