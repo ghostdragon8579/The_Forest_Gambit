@@ -8,14 +8,6 @@ void WolfEncounter () {
   rect(xChoiceButton5, yChoiceButton5, widthChoiceButton5, heightChoiceButton5);
   rect(xChoiceButton6, yChoiceButton6, widthChoiceButton6, heightChoiceButton6);
   //
-  if (mouseX>xChoiceButton4 && mouseX<xChoiceButton4+widthChoiceButton4 && mouseY>yChoiceButton4 && mouseY<yChoiceButton4+heightChoiceButton4) {
-    image(WolfFace, xChoiceButton4, yChoiceButton4, widthChoiceButton4, heightChoiceButton4);
-  } else if (mouseX>xChoiceButton5 && mouseX<xChoiceButton5+widthChoiceButton5 && mouseY>yChoiceButton5 && mouseY<yChoiceButton5+heightChoiceButton5) {
-    image(WolfFace, xChoiceButton5, yChoiceButton5, widthChoiceButton5, heightChoiceButton5);
-  }  else if (mouseX>xChoiceButton6 && mouseX<xChoiceButton6+widthChoiceButton6 && mouseY>yChoiceButton6 && mouseY<yChoiceButton6+heightChoiceButton6) {
-    image(WolfFace, xChoiceButton6, yChoiceButton6, widthChoiceButton6, heightChoiceButton6);
-  }
-  //
   fill(DarkGreen);
   textAlign(CENTER, CENTER); 
   size = 50;
@@ -50,5 +42,13 @@ void WolfEncounter () {
   textFont(ButtonFont, 50); 
   text(Hide, xChoiceButton6, yChoiceButton6, widthChoiceButton6, heightChoiceButton6);
   fill(resetDefaultInk);
+  //
+  if (mouseX>xChoiceButton4 && mouseX<xChoiceButton4+widthChoiceButton4 && mouseY>yChoiceButton4 && mouseY<yChoiceButton4+heightChoiceButton4) {
+    image(WolfFace, xChoiceButton4, yChoiceButton4, widthChoiceButton4, heightChoiceButton4);
+  } else if (mouseX>xChoiceButton5 && mouseX<xChoiceButton5+widthChoiceButton5 && mouseY>yChoiceButton5 && mouseY<yChoiceButton5+heightChoiceButton5) {
+    image(WolfFace, xChoiceButton5, yChoiceButton5, widthChoiceButton5, heightChoiceButton5);
+  }  else if (mouseX>xChoiceButton6 && mouseX<xChoiceButton6+widthChoiceButton6 && mouseY>yChoiceButton6 && mouseY<yChoiceButton6+heightChoiceButton6) {
+    image(WolfFace, xChoiceButton6, yChoiceButton6, widthChoiceButton6, heightChoiceButton6);
+  }
   //
 }

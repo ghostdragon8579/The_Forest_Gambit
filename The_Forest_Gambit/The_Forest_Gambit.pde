@@ -80,7 +80,7 @@ void setup() {
   String ForestImage = "Forest Image.jpg";
   String ForestImage2 = "Forest_Exit_Ending.jpg";
   String WolfImage = "Wolf Image.jpg";
-  String WolfImage2 = "Wolf Face.jpg";
+  String WolfImage2 = "Spirit Wolf Face.jpg";
   String BanditImage = "Thieves Forest.jpg";
   BackgroundImage = loadImage(imagesPath + Imagefolder + open + ForestImage);
   WolfPicture = loadImage(imagesPath + Imagefolder + open + WolfImage);
