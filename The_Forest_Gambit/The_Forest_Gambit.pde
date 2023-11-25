@@ -8,7 +8,7 @@ String Title3 = "Bandit Encounter";
 String Title4 = "Congratulations You Won!";
 String Story1 = "You are traveling back home after the war when the path splits into three in a forest. The first going straght through the forest, the second going around the edge, and the third going out of the forest. Which path do you choose?";
 String Story2 = "As you are walking along the path you hear howling in the distance. Wolves are on the hunt and you are their pray. What do you do?";
-String Story3 = "As you are walking along the path you see people running among the trees. Then a large man with a club steps out of the trees in front of you. He says to you give us you money and you may pass. What do you do?";
+String Story3 = "As you are walking along the path you see people running among the trees. Then a large man with a club steps out of the trees in front of you. He says to you give us your money and you may pass. What do you do?";
 String Ending1Text = "You decided that the forest wasn't safe and decided to leave. You make it back home safe and sound.";
 String Path1 = "The First path";
 String Path2 = "The Second path";
@@ -206,9 +206,9 @@ void setup() {
 //
 void draw() {
   //
+  if (StoryEnding1==true && StoryWolfEncounter==false && StoryBanditEcounter==false) LeftTheForest ();
   if (StoryEnding1==false && StoryWolfEncounter==true && StoryBanditEcounter==false) WolfEncounter ();
   if (StoryEnding1==false && StoryWolfEncounter==false && StoryBanditEcounter==true) BanditEncounter ();
-  if (StoryEnding1==true && StoryWolfEncounter==false && StoryBanditEcounter==false) LeftTheForest ();
   if (StoryEnding1==false && StoryWolfEncounter==false && StoryBanditEcounter==false) EnteringTheForest ();
   //
 } //End draw
@@ -217,10 +217,10 @@ void keyPressed() {} //End keyPressed
 //
 void mousePressed() {
   //
-  if (mouseX>xChoiceButton1 && mouseX<xChoiceButton1+widthChoiceButton1 && mouseY>yChoiceButton1 && mouseY<yChoiceButton1+heightChoiceButton1) StoryWolfEncounter=true;
-  if (mouseX>xChoiceButton2 && mouseX<xChoiceButton2+widthChoiceButton2 && mouseY>yChoiceButton2 && mouseY<yChoiceButton2+heightChoiceButton2) StoryBanditEcounter=true;
-  if (mouseX>xChoiceButton3 && mouseX<xChoiceButton3+widthChoiceButton3 && mouseY>yChoiceButton3 && mouseY<yChoiceButton3+heightChoiceButton3) StoryEnding1=true;
-  if (mouseX>ResetButton1x && mouseX<ResetButton1x+ResetButton1width && mouseY>ResetButton1y && mouseY<ResetButton1y+ResetButton1height) StoryEnding1=false; StoryBanditEcounter=false;
+  if (mouseX>xChoiceButton1 && mouseX<xChoiceButton1+widthChoiceButton1 && mouseY>yChoiceButton1 && mouseY<yChoiceButton1+heightChoiceButton1 && StoryEnding1==false && StoryWolfEncounter==false && StoryBanditEcounter==false) StoryWolfEncounter=true;
+  if (mouseX>xChoiceButton2 && mouseX<xChoiceButton2+widthChoiceButton2 && mouseY>yChoiceButton2 && mouseY<yChoiceButton2+heightChoiceButton2 && StoryEnding1==false && StoryWolfEncounter==false && StoryBanditEcounter==false) StoryBanditEcounter=true;
+  if (mouseX>xChoiceButton3 && mouseX<xChoiceButton3+widthChoiceButton3 && mouseY>yChoiceButton3 && mouseY<yChoiceButton3+heightChoiceButton3 && StoryEnding1==false && StoryWolfEncounter==false && StoryBanditEcounter==false) StoryEnding1=true;
+  if (mouseX>ResetButton1x && mouseX<ResetButton1x+ResetButton1width && mouseY>ResetButton1y && mouseY<ResetButton1y+ResetButton1height) StoryEnding1=false;
   //
 } //End mousePressed
 //
