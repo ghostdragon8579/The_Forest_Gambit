@@ -12,7 +12,7 @@ three in a forest. The first going straght through the forest, the second going 
 # Wolf Encounter Text Notes
 - [Wolf Encounter]
 - [As you are walking along the path you hear howling in the distance.
-Wolves are on the hunt are closing in on your location fast. What do you do?]
+Wolves are on the hunt and are closing in on your location fast. What do you do?]
 - [Fight!]
 - [Flee!]
 - [Hide!]
