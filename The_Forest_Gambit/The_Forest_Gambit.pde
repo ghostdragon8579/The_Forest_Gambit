@@ -25,6 +25,7 @@ PImage BackgroundImage2;
 PImage WolfPicture;
 PImage WolfFace;
 PImage BanditImage2;
+PImage CloakandDagger;
 color Red=#DE001E;
 color Gray=#AFAFAF;
 color Black=#000000;
@@ -82,11 +83,13 @@ void setup() {
   String WolfImage = "Wolf Image.jpg";
   String WolfImage2 = "Spirit Wolf Face.jpg";
   String BanditImage = "Thieves Forest.jpg";
+  String DaggerImage = "Cloak and Dagger.jpg";
   BackgroundImage = loadImage(imagesPath + Imagefolder + open + ForestImage);
+  BackgroundImage2 = loadImage(imagesPath + Imagefolder + open + ForestImage2);
   WolfPicture = loadImage(imagesPath + Imagefolder + open + WolfImage);
   WolfFace = loadImage(imagesPath + Imagefolder + open + WolfImage2);
   BanditImage2 = loadImage(imagesPath + Imagefolder + open + BanditImage);
-  BackgroundImage2 = loadImage(imagesPath + Imagefolder + open + ForestImage2);
+  CloakandDagger = loadImage(imagesPath + Imagefolder + open + DaggerImage);
   //
   xRectBackground = appWidth*0;
   yRectBackground = appHeight*0;

@@ -8,24 +8,6 @@ void BanditEncounter () {
   rect(xChoiceButton8, yChoiceButton8, widthChoiceButton8, heightChoiceButton8);
   rect(xChoiceButton9, yChoiceButton9, widthChoiceButton9, heightChoiceButton9);
   //
-  color hoverOverColor=resetDefaultInk;
-  if (mouseX>xChoiceButton7 && mouseX<xChoiceButton7+widthChoiceButton7 && mouseY>yChoiceButton7 && mouseY<yChoiceButton7+heightChoiceButton7) {
-    hoverOverColor = Green;
-    fill(hoverOverColor);
-    rect(xChoiceButton7, yChoiceButton7, widthChoiceButton7, heightChoiceButton7);
-    fill(resetDefaultInk);
-  } else if (mouseX>xChoiceButton8 && mouseX<xChoiceButton8+widthChoiceButton8 && mouseY>yChoiceButton8 && mouseY<yChoiceButton8+heightChoiceButton8) {
-    hoverOverColor = Green;
-    fill(hoverOverColor);
-    rect(xChoiceButton8, yChoiceButton8, widthChoiceButton8, heightChoiceButton8);
-    fill(resetDefaultInk);
-  }  else if (mouseX>xChoiceButton9 && mouseX<xChoiceButton9+widthChoiceButton9 && mouseY>yChoiceButton9 && mouseY<yChoiceButton9+heightChoiceButton9) {
-    hoverOverColor = Green;
-    fill(hoverOverColor);
-    rect(xChoiceButton9, yChoiceButton9, widthChoiceButton9, heightChoiceButton9);
-    fill(resetDefaultInk);
-  }
-  //
   fill(DarkGreen);
   textAlign(CENTER, CENTER); 
   size = 50;
@@ -60,5 +42,13 @@ void BanditEncounter () {
   textFont(ButtonFont, 50); 
   text(Parlay, xChoiceButton9, yChoiceButton9, widthChoiceButton9, heightChoiceButton9);
   fill(resetDefaultInk);
+  //
+  if (mouseX>xChoiceButton7 && mouseX<xChoiceButton7+widthChoiceButton7 && mouseY>yChoiceButton7 && mouseY<yChoiceButton7+heightChoiceButton7) {
+    image(CloakandDagger, xChoiceButton7, yChoiceButton7, widthChoiceButton7, heightChoiceButton7);
+  } else if (mouseX>xChoiceButton8 && mouseX<xChoiceButton8+widthChoiceButton8 && mouseY>yChoiceButton8 && mouseY<yChoiceButton8+heightChoiceButton8) {
+    image(CloakandDagger, xChoiceButton8, yChoiceButton8, widthChoiceButton8, heightChoiceButton8);
+  }  else if (mouseX>xChoiceButton9 && mouseX<xChoiceButton9+widthChoiceButton9 && mouseY>yChoiceButton9 && mouseY<yChoiceButton9+heightChoiceButton9) {
+    image(CloakandDagger, xChoiceButton9, yChoiceButton9, widthChoiceButton9, heightChoiceButton9);
+  }
   //
 }
