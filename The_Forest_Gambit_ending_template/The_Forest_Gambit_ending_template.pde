@@ -10,7 +10,7 @@ PFont QuestionFont;
 PFont ButtonFont;
 PFont TitleFont;
 String Title4 = "Congratulations You Won!";
-String Ending2Text = "You decided that the forest wasn't safe and decided to leave. You make it back home safe and sound.";
+String Ending2Text = "Filler Text";
 String ResetButton = "Reset and try again?";
 float Ending2Backgroundx, Ending2Backgroundy, Ending2Backgroundwidth, Ending2Backgroundheight;
 float Ending2x, Ending2y, Ending2width, Ending2height;
@@ -31,13 +31,13 @@ void setup() {
   String up = "..";
   String imagesPath = up + open;
   String Imagefolder = "Images";
-  String ForestImage2 = "Forest_Exit_Ending.jpg";
+  String EndingImage1 = "Exit Image 1.jpg";
   //
   Ending2Backgroundx = appWidth*0;
   Ending2Backgroundy = appHeight*0;
   Ending2Backgroundwidth = appWidth-1;
   Ending2Backgroundheight = appHeight-1;
-  BackgroundImage3 = loadImage(imagesPath + Imagefolder + open + ForestImage2);
+  BackgroundImage3 = loadImage(imagesPath + Imagefolder + open + EndingImage1);
   //
   Ending2x = appWidth*1/5;
   Ending2y = appHeight*1/4;
