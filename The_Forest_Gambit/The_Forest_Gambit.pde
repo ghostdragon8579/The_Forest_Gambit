@@ -240,8 +240,8 @@ void draw() {
   if (StoryEnding1==true && StoryEnding2==false && StoryWolfEncounter==false && StoryBanditEcounter==false) LeftTheForest ();
   if (StoryEnding1==false && StoryEnding2==false && StoryWolfEncounter==true && StoryBanditEcounter==false) WolfEncounter ();
   if (StoryEnding1==false && StoryEnding2==false && StoryWolfEncounter==false && StoryBanditEcounter==true) BanditEncounter ();
-  if (StoryEnding1==false && StoryEnding2==false && StoryWolfEncounter==false && StoryBanditEcounter==false) EnteringTheForest ();
   if (StoryEnding1==false && StoryEnding2==true && StoryWolfEncounter==false && StoryBanditEcounter==true) BanditParlay ();
+  if (StoryEnding1==false && StoryEnding2==false && StoryWolfEncounter==false && StoryBanditEcounter==false) EnteringTheForest ();
   //
 } //End draw
 //
@@ -252,7 +252,9 @@ void mousePressed() {
   if (mouseX>xChoiceButton1 && mouseX<xChoiceButton1+widthChoiceButton1 && mouseY>yChoiceButton1 && mouseY<yChoiceButton1+heightChoiceButton1 && StoryEnding1==false && StoryWolfEncounter==false && StoryBanditEcounter==false) StoryWolfEncounter=true;
   if (mouseX>xChoiceButton2 && mouseX<xChoiceButton2+widthChoiceButton2 && mouseY>yChoiceButton2 && mouseY<yChoiceButton2+heightChoiceButton2 && StoryEnding1==false && StoryWolfEncounter==false && StoryBanditEcounter==false) StoryBanditEcounter=true;
   if (mouseX>xChoiceButton3 && mouseX<xChoiceButton3+widthChoiceButton3 && mouseY>yChoiceButton3 && mouseY<yChoiceButton3+heightChoiceButton3 && StoryEnding1==false && StoryWolfEncounter==false && StoryBanditEcounter==false) StoryEnding1=true;
+  if (mouseX>xChoiceButton9 && mouseX<xChoiceButton9+widthChoiceButton9 && mouseY>yChoiceButton9 && mouseY<yChoiceButton9+heightChoiceButton9 && StoryEnding1==false && StoryEnding2==false && StoryWolfEncounter==false && StoryBanditEcounter==true) StoryEnding2=true;
   if (mouseX>ResetButton1x && mouseX<ResetButton1x+ResetButton1width && mouseY>ResetButton1y && mouseY<ResetButton1y+ResetButton1height) StoryEnding1=false;
+  if (mouseX>ResetButton2x && mouseX<ResetButton2x+ResetButton2width && mouseY>ResetButton2y && mouseY<ResetButton2y+ResetButton2height) StoryEnding2=false; StoryBanditEcounter=false;
   //
 } //End mousePressed
 //
