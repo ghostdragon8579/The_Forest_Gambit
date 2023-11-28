@@ -30,6 +30,11 @@ trees. Then a large man with a club steps out of the trees in front of you. He s
 - [You decided that the forest wasn't safe and decided to leave. You make it back home safe and sound.]
 - [Reset and try again?]
 
+# Ending two Text Notes
+- [Congratulations You Won!]
+- [Filler Text]
+- [Reset and try again?]
+
 # Gambit Location Map Notes
 - [Start of the Gambit will have a button leading to the location map]
 - [Clicking on any location marked on the map will take you to that part
