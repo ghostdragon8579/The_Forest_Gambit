@@ -16,22 +16,22 @@ void LeftTheForest () {
   //
   fill(Black);
   textAlign(CENTER, CENTER); 
-  size = 50;
-  textFont(QuestionFont, 40); 
+  size = 40;
+  textFont(QuestionFont, size); 
   text(Ending1Text, Ending1x, Ending1y, Ending1width, Ending1height);
   fill(resetDefaultInk);
   //
   fill(Black);
   textAlign(CENTER, CENTER); 
-  size = 50;
-  textFont(ButtonFont, 30); 
-  text(ResetButton1, ResetButton1x, ResetButton1y, ResetButton1width, ResetButton1height);
+  size = 30;
+  textFont(ButtonFont, size); 
+  text(ResetButton, ResetButton1x, ResetButton1y, ResetButton1width, ResetButton1height);
   fill(resetDefaultInk);
   //
   fill(DarkGreen);
   textAlign(CENTER, CENTER); 
   size = 50;
-  textFont(TitleFont, 50); 
+  textFont(TitleFont, size); 
   text(Title4, Title4x, Title4y, Title4width, Title4height);
   fill(resetDefaultInk);
   //

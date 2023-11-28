@@ -28,36 +28,36 @@ void EnteringTheForest () {
   //
   fill(DarkGreen);
   textAlign(CENTER, CENTER); 
-  size = 50;
-  textFont(TitleFont, 60); 
+  size = 60;
+  textFont(TitleFont, size); 
   text(Title1, Title1x, Title1y, Title1width, Title1height);
   fill(resetDefaultInk);
   //
   fill(Black);
   textAlign(CENTER, CENTER); 
-  size = 50;
-  textFont(QuestionFont, 25); 
+  size = 25;
+  textFont(QuestionFont, size); 
   text(Story1, Question1x, Question1y, Question1width, Question1height);
   fill(resetDefaultInk);
   //
   fill(Black);
   textAlign(CENTER, CENTER); 
-  size = 50;
-  textFont(ButtonFont, 35); 
+  size = 35;
+  textFont(ButtonFont, size); 
   text(Path1, xChoiceButton1, yChoiceButton1, widthChoiceButton1, heightChoiceButton1);
   fill(resetDefaultInk);
   //
   fill(Black);
   textAlign(CENTER, CENTER); 
-  size = 50;
-  textFont(ButtonFont, 35); 
+  size = 35;
+  textFont(ButtonFont, size); 
   text(Path2, xChoiceButton2, yChoiceButton2, widthChoiceButton2, heightChoiceButton2);
   fill(resetDefaultInk);
   //
   fill(Black);
   textAlign(CENTER, CENTER); 
-  size = 50;
-  textFont(ButtonFont, 35); 
+  size = 35;
+  textFont(ButtonFont, size); 
   text(Path3, xChoiceButton3, yChoiceButton3, widthChoiceButton3, heightChoiceButton3);
   fill(resetDefaultInk);
   //

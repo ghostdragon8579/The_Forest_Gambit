@@ -10,36 +10,36 @@ void BanditEncounter () {
   //
   fill(DarkGreen);
   textAlign(CENTER, CENTER); 
-  size = 50;
-  textFont(TitleFont, 60); 
+  size = 60;
+  textFont(TitleFont, size); 
   text(Title3, Title3x, Title3y, Title3width, Title3height);
   fill(resetDefaultInk);
   //
   fill(Black);
   textAlign(CENTER, CENTER); 
-  size = 50;
-  textFont(QuestionFont, 25); 
+  size = 25;
+  textFont(QuestionFont, size); 
   text(Story3, Question3x, Question3y, Question3width, Question3height);
   fill(resetDefaultInk);
   //
   fill(Black);
   textAlign(CENTER, CENTER); 
   size = 50;
-  textFont(ButtonFont, 50); 
+  textFont(ButtonFont, size); 
   text(Fight, xChoiceButton7, yChoiceButton7, widthChoiceButton7, heightChoiceButton7);
   fill(resetDefaultInk);
   //
   fill(Black);
   textAlign(CENTER, CENTER); 
   size = 50;
-  textFont(ButtonFont, 50); 
+  textFont(ButtonFont, size); 
   text(Flee, xChoiceButton8, yChoiceButton8, widthChoiceButton8, heightChoiceButton8);
   fill(resetDefaultInk);
   //
   fill(Black);
   textAlign(CENTER, CENTER); 
   size = 50;
-  textFont(ButtonFont, 50); 
+  textFont(ButtonFont, size); 
   text(Parlay, xChoiceButton9, yChoiceButton9, widthChoiceButton9, heightChoiceButton9);
   fill(resetDefaultInk);
   //

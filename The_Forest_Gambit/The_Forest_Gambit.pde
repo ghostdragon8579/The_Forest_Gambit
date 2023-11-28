@@ -1,7 +1,7 @@
 //Global Variables
 int appWidth, appHeight;
 int size;
-String ResetButton1 = "Reset and try again?";
+String ResetButton = "Reset and try again?";
 String Title1 = "The Forest Gambit";
 String Title2 = "Wolf Encounter";
 String Title3 = "Bandit Encounter";
@@ -33,6 +33,7 @@ color Green=#00DE01;
 color DarkGreen=#02B703;
 color resetDefaultInk=#FFFFFF;
 float ResetButton1x, ResetButton1y, ResetButton1width, ResetButton1height;
+float ResetButton2x, ResetButton2y, ResetButton2width, ResetButton2height;
 float xRectBackground, yRectBackground, widthRectBackground, heightRectBackground;
 float xRectBackground2, yRectBackground2, widthRectBackground2, heightRectBackground2;
 float xRectBackground3, yRectBackground3, widthRectBackground3, heightRectBackground3;

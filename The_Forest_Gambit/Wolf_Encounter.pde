@@ -10,36 +10,36 @@ void WolfEncounter () {
   //
   fill(DarkGreen);
   textAlign(CENTER, CENTER); 
-  size = 50;
-  textFont(TitleFont, 60); 
+  size = 60;
+  textFont(TitleFont, size); 
   text(Title2, Title2x, Title2y, Title2width, Title2height);
   fill(resetDefaultInk);
   //
   fill(Black);
   textAlign(CENTER, CENTER); 
-  size = 50;
-  textFont(QuestionFont, 25); 
+  size = 25;
+  textFont(QuestionFont, size); 
   text(Story2, Question2x, Question2y, Question2width, Question2height);
   fill(resetDefaultInk);
   //
   fill(Black);
   textAlign(CENTER, CENTER); 
   size = 50;
-  textFont(ButtonFont, 50); 
+  textFont(ButtonFont, size); 
   text(Fight, xChoiceButton4, yChoiceButton4, widthChoiceButton4, heightChoiceButton4);
   fill(resetDefaultInk);
   //
   fill(Black);
   textAlign(CENTER, CENTER); 
   size = 50;
-  textFont(ButtonFont, 50); 
+  textFont(ButtonFont, size); 
   text(Flee, xChoiceButton5, yChoiceButton5, widthChoiceButton5, heightChoiceButton5);
   fill(resetDefaultInk);
   //
   fill(Black);
   textAlign(CENTER, CENTER); 
   size = 50;
-  textFont(ButtonFont, 50); 
+  textFont(ButtonFont, size); 
   text(Hide, xChoiceButton6, yChoiceButton6, widthChoiceButton6, heightChoiceButton6);
   fill(resetDefaultInk);
   //
