@@ -10,7 +10,7 @@ PFont QuestionFont;
 PFont ButtonFont;
 PFont TitleFont;
 String Title4 = "Congratulations You Won!";
-String Ending2Text = "Filler Text";
+String Ending2Text = "You accept the bandit's terms and pay them money for safe passsage. They are true to their words and let you pass without a fight. You reach the edge of the forest and make it back home safe and sound.";
 String ResetButton = "Reset and try again?";
 float Ending2Backgroundx, Ending2Backgroundy, Ending2Backgroundwidth, Ending2Backgroundheight;
 float Ending2x, Ending2y, Ending2width, Ending2height;
@@ -78,22 +78,22 @@ void draw() {
   //
   fill(Black);
   textAlign(CENTER, CENTER); 
-  size = 50;
-  textFont(QuestionFont, 40); 
+  size = 30;
+  textFont(QuestionFont, size); 
   text(Ending2Text, Ending2x, Ending2y, Ending2width, Ending2height);
   fill(resetDefaultInk);
   //
   fill(Black);
   textAlign(CENTER, CENTER); 
-  size = 50;
-  textFont(ButtonFont, 30); 
+  size = 30;
+  textFont(ButtonFont, size); 
   text(ResetButton, ResetButton2x, ResetButton2y, ResetButton2width, ResetButton2height);
   fill(resetDefaultInk);
   //
   fill(DarkGreen);
   textAlign(CENTER, CENTER); 
   size = 50;
-  textFont(TitleFont, 50); 
+  textFont(TitleFont, size); 
   text(Title4, Title5x, Title5y, Title5width, Title5height);
   fill(resetDefaultInk);
   //

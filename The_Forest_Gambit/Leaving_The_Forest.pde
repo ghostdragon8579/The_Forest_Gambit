@@ -16,7 +16,7 @@ void LeftTheForest () {
   //
   fill(Black);
   textAlign(CENTER, CENTER); 
-  size = 40;
+  size = 30;
   textFont(QuestionFont, size); 
   text(Ending1Text, Ending1x, Ending1y, Ending1width, Ending1height);
   fill(resetDefaultInk);
