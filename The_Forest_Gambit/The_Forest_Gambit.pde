@@ -10,6 +10,7 @@ String Story1 = "You are traveling back home after the war when the path splits 
 String Story2 = "As you are walking along the path you hear howling in the distance. Wolves are on the hunt and are closing in on your location fast. What do you do?";
 String Story3 = "As you are walking along the path you see people running among the trees. Then a large man with a club steps out of the trees in front of you. He says to you give us your money and you may pass. What do you do?";
 String Ending1Text = "You decided that the forest wasn't safe and decided to leave. You make it back home safe and sound.";
+String Ending2Text = "You accept the bandit's terms and pay them money for safe passsage. They are true to their words and let you pass without a fight. You reach the edge of the forest and make it back home safe and sound.";
 String Path1 = "The First path";
 String Path2 = "The Second path";
 String Path3 = "The Third path";
@@ -22,6 +23,7 @@ PFont QuestionFont;
 PFont ButtonFont;
 PImage BackgroundImage;
 PImage BackgroundImage2;
+PImage BackgroundImage3;
 PImage WolfPicture;
 PImage WolfFace;
 PImage BanditImage2;
@@ -38,10 +40,12 @@ float xRectBackground, yRectBackground, widthRectBackground, heightRectBackgroun
 float xRectBackground2, yRectBackground2, widthRectBackground2, heightRectBackground2;
 float xRectBackground3, yRectBackground3, widthRectBackground3, heightRectBackground3;
 float Ending1Backgroundx, Ending1Backgroundy, Ending1Backgroundwidth, Ending1Backgroundheight;
+float Ending2Backgroundx, Ending2Backgroundy, Ending2Backgroundwidth, Ending2Backgroundheight;
 float Title1x, Title1y, Title1width, Title1height;
 float Title2x, Title2y, Title2width, Title2height;
 float Title3x, Title3y, Title3width, Title3height;
 float Title4x, Title4y, Title4width, Title4height;
+float Title5x, Title5y, Title5width, Title5height;
 float Question1x, Question1y, Question1width, Question1height;
 float Question2x, Question2y, Question2width, Question2height;
 float Question3x, Question3y, Question3width, Question3height;
@@ -85,8 +89,10 @@ void setup() {
   String WolfImage2 = "Spirit Wolf Face.jpg";
   String BanditImage = "Thieves Forest.jpg";
   String DaggerImage = "Cloak and Dagger.jpg";
+  String EndingImage1 = "Exit Image 1.jpg";
   BackgroundImage = loadImage(imagesPath + Imagefolder + open + ForestImage);
   BackgroundImage2 = loadImage(imagesPath + Imagefolder + open + ForestImage2);
+  BackgroundImage3 = loadImage(imagesPath + Imagefolder + open + EndingImage1);
   WolfPicture = loadImage(imagesPath + Imagefolder + open + WolfImage);
   WolfFace = loadImage(imagesPath + Imagefolder + open + WolfImage2);
   BanditImage2 = loadImage(imagesPath + Imagefolder + open + BanditImage);
@@ -112,6 +118,11 @@ void setup() {
   Ending1Backgroundwidth = appWidth-1;
   Ending1Backgroundheight = appHeight-1;
   //
+  Ending2Backgroundx = appWidth*0;
+  Ending2Backgroundy = appHeight*0;
+  Ending2Backgroundwidth = appWidth-1;
+  Ending2Backgroundheight = appHeight-1;
+  //
   Question1x = appWidth*1/5;
   Question1y = appHeight*1/4;
   Question1width = appWidth*3/5;
@@ -132,6 +143,11 @@ void setup() {
   Ending1width = appWidth*3/5;
   Ending1height = appHeight*5/13;
   //
+  Ending2x = appWidth*1/5;
+  Ending2y = appHeight*1/4;
+  Ending2width = appWidth*3/5;
+  Ending2height = appHeight*5/13;
+  //
   Title1x = Question1x;
   Title1y = appHeight*1/20;
   Title1width = Question1width;
@@ -151,6 +167,11 @@ void setup() {
   Title4y = appHeight*1/20;
   Title4width = appWidth*3/5;
   Title4height = appHeight*2/13;
+  //
+  Title5x = appWidth*1/5;
+  Title5y = appHeight*1/20;
+  Title5width = appWidth*3/5;
+  Title5height = appHeight*2/13;
   //
   xChoiceButton1 = appWidth*1/6;
   yChoiceButton1 = appHeight*2/3;
@@ -200,7 +221,12 @@ void setup() {
   ResetButton1x = appWidth*2/5;
   ResetButton1y = appHeight*2/3;
   ResetButton1width = appWidth*1/5;
-  ResetButton1height = appHeight*2/13;;
+  ResetButton1height = appHeight*2/13;
+  //
+  ResetButton2x = appWidth*2/5;
+  ResetButton2y = appHeight*2/3;
+  ResetButton2width = appWidth*1/5;
+  ResetButton2height = appHeight*2/13;
   //
   QuestionFont = createFont("Arial", 55);
   ButtonFont = createFont("Calibri", 55);

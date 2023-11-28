@@ -52,7 +52,7 @@ void setup() {
   ResetButton2x = appWidth*2/5;
   ResetButton2y = appHeight*2/3;
   ResetButton2width = appWidth*1/5;
-  ResetButton2height = appHeight*2/13;;
+  ResetButton2height = appHeight*2/13;
   //
   QuestionFont = createFont("Arial", 55);
   ButtonFont = createFont("Calibri", 55);
