@@ -32,7 +32,8 @@ trees. Then a large man with a club steps out of the trees in front of you. He s
 
 # Ending two Text Notes
 - [Congratulations You Won!]
-- [Filler Text]
+- [You accept the bandit's terms and pay them money for safe passsage.
+They are true to their words and let you pass without a fight. You reach the edge of the forest and make it back home safe and sound.]
 - [Reset and try again?]
 
 # Gambit Location Map Notes
