@@ -5,17 +5,17 @@ color Red=#DE001E;
 color resetDefaultInk=#FFFFFF;
 int appWidth, appHeight;
 int size;
-PImage BackgroundImage2;
+PImage BackgroundImage3;
 PFont QuestionFont;
 PFont ButtonFont;
 PFont TitleFont;
 String Title4 = "Congratulations You Won!";
-String Ending1Text = "You decided that the forest wasn't safe and decided to leave. You make it back home safe and sound.";
-String ResetButton1 = "Reset and try again?";
-float Ending1Backgroundx, Ending1Backgroundy, Ending1Backgroundwidth, Ending1Backgroundheight;
-float Ending1x, Ending1y, Ending1width, Ending1height;
-float Title4x, Title4y, Title4width, Title4height;
-float ResetButton1x, ResetButton1y, ResetButton1width, ResetButton1height;
+String Ending2Text = "You decided that the forest wasn't safe and decided to leave. You make it back home safe and sound.";
+String ResetButton = "Reset and try again?";
+float Ending2Backgroundx, Ending2Backgroundy, Ending2Backgroundwidth, Ending2Backgroundheight;
+float Ending2x, Ending2y, Ending2width, Ending2height;
+float Title5x, Title5y, Title5width, Title5height;
+float ResetButton2x, ResetButton2y, ResetButton2width, ResetButton2height;
 //
 void setup() {
 //
@@ -33,26 +33,26 @@ void setup() {
   String Imagefolder = "Images";
   String ForestImage2 = "Forest_Exit_Ending.jpg";
   //
-  Ending1Backgroundx = appWidth*0;
-  Ending1Backgroundy = appHeight*0;
-  Ending1Backgroundwidth = appWidth-1;
-  Ending1Backgroundheight = appHeight-1;
-  BackgroundImage2 = loadImage(imagesPath + Imagefolder + open + ForestImage2);
+  Ending2Backgroundx = appWidth*0;
+  Ending2Backgroundy = appHeight*0;
+  Ending2Backgroundwidth = appWidth-1;
+  Ending2Backgroundheight = appHeight-1;
+  BackgroundImage3 = loadImage(imagesPath + Imagefolder + open + ForestImage2);
   //
-  Ending1x = appWidth*1/5;
-  Ending1y = appHeight*1/4;
-  Ending1width = appWidth*3/5;
-  Ending1height = appHeight*5/13;
+  Ending2x = appWidth*1/5;
+  Ending2y = appHeight*1/4;
+  Ending2width = appWidth*3/5;
+  Ending2height = appHeight*5/13;
   //
-  Title4x = appWidth*1/5;
-  Title4y = appHeight*1/20;
-  Title4width = appWidth*3/5;
-  Title4height = appHeight*2/13;
+  Title5x = appWidth*1/5;
+  Title5y = appHeight*1/20;
+  Title5width = appWidth*3/5;
+  Title5height = appHeight*2/13;
   //
-  ResetButton1x = appWidth*2/5;
-  ResetButton1y = appHeight*2/3;
-  ResetButton1width = appWidth*1/5;
-  ResetButton1height = appHeight*2/13;;
+  ResetButton2x = appWidth*2/5;
+  ResetButton2y = appHeight*2/3;
+  ResetButton2width = appWidth*1/5;
+  ResetButton2height = appHeight*2/13;;
   //
   QuestionFont = createFont("Arial", 55);
   ButtonFont = createFont("Calibri", 55);
@@ -62,17 +62,17 @@ void setup() {
 //
 void draw() {
   //
-  rect(Ending1Backgroundx, Ending1Backgroundy, Ending1Backgroundwidth, Ending1Backgroundheight);
-  image(BackgroundImage2, Ending1Backgroundx, Ending1Backgroundy, Ending1Backgroundwidth, Ending1Backgroundheight);
-  rect(Ending1x, Ending1y, Ending1width, Ending1height);
-  rect(Title4x, Title4y, Title4width, Title4height);
-  rect(ResetButton1x, ResetButton1y, ResetButton1width, ResetButton1height);
+  rect(Ending2Backgroundx, Ending2Backgroundy, Ending2Backgroundwidth, Ending2Backgroundheight);
+  image(BackgroundImage3, Ending2Backgroundx, Ending2Backgroundy, Ending2Backgroundwidth, Ending2Backgroundheight);
+  rect(Ending2x, Ending2y, Ending2width, Ending2height);
+  rect(Title5x, Title5y, Title5width, Title5height);
+  rect(ResetButton2x, ResetButton2y, ResetButton2width, ResetButton2height);
   //
   color hoverOverColor=resetDefaultInk;
-  if (mouseX>ResetButton1x && mouseX<ResetButton1x+ResetButton1width && mouseY>ResetButton1y && mouseY<ResetButton1y+ResetButton1height) {
+  if (mouseX>ResetButton2x && mouseX<ResetButton2x+ResetButton2width && mouseY>ResetButton2y && mouseY<ResetButton2y+ResetButton2height) {
     hoverOverColor = Red;
     fill(hoverOverColor);
-    rect(ResetButton1x, ResetButton1y, ResetButton1width, ResetButton1height);
+    rect(ResetButton2x, ResetButton2y, ResetButton2width, ResetButton2height);
     fill(resetDefaultInk);
   }
   //
@@ -80,21 +80,21 @@ void draw() {
   textAlign(CENTER, CENTER); 
   size = 50;
   textFont(QuestionFont, 40); 
-  text(Ending1Text, Ending1x, Ending1y, Ending1width, Ending1height);
+  text(Ending2Text, Ending2x, Ending2y, Ending2width, Ending2height);
   fill(resetDefaultInk);
   //
   fill(Black);
   textAlign(CENTER, CENTER); 
   size = 50;
   textFont(ButtonFont, 30); 
-  text(ResetButton1, ResetButton1x, ResetButton1y, ResetButton1width, ResetButton1height);
+  text(ResetButton, ResetButton2x, ResetButton2y, ResetButton2width, ResetButton2height);
   fill(resetDefaultInk);
   //
   fill(DarkGreen);
   textAlign(CENTER, CENTER); 
   size = 50;
   textFont(TitleFont, 50); 
-  text(Title4, Title4x, Title4y, Title4width, Title4height);
+  text(Title4, Title5x, Title5y, Title5width, Title5height);
   fill(resetDefaultInk);
   //
 } //End draw
