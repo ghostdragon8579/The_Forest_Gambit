@@ -25,10 +25,6 @@ trees. Then a large man with a club steps out of the trees in front of you. He s
 - [Flee!]
 - [Parlay!]
 
-# Death Text Notes
-- [You Died]
-- [Reset and try again?]
-
 # Ending one Text Notes
 - [Congratulations You Won!]
 - [You decided that the forest wasn't safe and decided to leave. You make it back home safe and sound.]
@@ -38,6 +34,15 @@ trees. Then a large man with a club steps out of the trees in front of you. He s
 - [Congratulations You Won!]
 - [You accept the bandit's terms and pay them money for safe passsage.
 They are true to their words and let you pass without a fight. You reach the edge of the forest and make it back home safe and sound.]
+- [Reset and try again?]
+
+# Ending three Text Notes
+- [You Died]
+- [Reset and try again?]
+
+# Ending three Text Notes
+- [Congratulations You Won!]
+- [Filler Text]
 - [Reset and try again?]
 
 # Gambit Location Map Notes
