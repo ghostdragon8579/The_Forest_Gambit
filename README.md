@@ -40,7 +40,7 @@ They are true to their words and let you pass without a fight. You reach the edg
 - [You Died]
 - [Reset and try again?]
 
-# Ending three Text Notes
+# Ending four Text Notes
 - [Congratulations You Won!]
 - [Filler Text]
 - [Reset and try again?]
