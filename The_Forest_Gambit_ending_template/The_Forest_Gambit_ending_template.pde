@@ -2,6 +2,7 @@
 color Black=#000000;
 color DarkGreen=#02B703;
 color Red=#DE001E;
+color DarkRed=#AA021B;
 color resetDefaultInk=#FFFFFF;
 int appWidth, appHeight;
 int size;
@@ -9,6 +10,7 @@ PImage BackgroundImage4;
 PFont QuestionFont;
 PFont ButtonFont;
 PFont TitleFont;
+PFont DeathFont;
 String Title4 = "Congratulations You Won!";
 String Ending3Text = "Filler Text";
 String ResetButton = "Reset and try again?";
@@ -31,7 +33,7 @@ void setup() {
   String up = "..";
   String imagesPath = up + open;
   String Imagefolder = "Images";
-  String EndingImage2 = "Exit Image 1.jpg";
+  String EndingImage2 = "Death Image 1.jpg";
   //
   Ending3Backgroundx = appWidth*0;
   Ending3Backgroundy = appHeight*0;
@@ -57,6 +59,7 @@ void setup() {
   QuestionFont = createFont("Arial", 55);
   ButtonFont = createFont("Calibri", 55);
   TitleFont = createFont("Times New Roman Bold", 55);
+  DeathFont = createFont("Papyrus", 55);
   //
 } //End setup
 //
