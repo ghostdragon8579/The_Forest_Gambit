@@ -25,6 +25,10 @@ trees. Then a large man with a club steps out of the trees in front of you. He s
 - [Flee!]
 - [Parlay!]
 
+# Death Text Notes
+- [You Died]
+- [Reset and try again?]
+
 # Ending one Text Notes
 - [Congratulations You Won!]
 - [You decided that the forest wasn't safe and decided to leave. You make it back home safe and sound.]
