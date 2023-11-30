@@ -12,7 +12,7 @@ PFont ButtonFont;
 PFont TitleFont;
 PFont DeathFont;
 String Title4 = "Congratulations You Won!";
-String Ending4Text = "Filler Text";
+String Ending4Text = "You hide in a hollow tree. You hear the wolves searching for you. After a while they lose interest and move on. You manage to find your way out of the forest and make it back home safe and sound.";
 String ResetButton = "Reset and try again?";
 float Ending4Backgroundx, Ending4Backgroundy, Ending4Backgroundwidth, Ending4Backgroundheight;
 float Ending4x, Ending4y, Ending4width, Ending4height;
