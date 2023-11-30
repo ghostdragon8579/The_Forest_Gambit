@@ -24,7 +24,7 @@ void BanditFight () {
   textAlign(CENTER, CENTER); 
   size = 120;
   textFont(DeathFont, size); 
-  text(Title5, Ending3x, Ending3y, Ending3width, Ending3height);
+  text(Ending3Text, Ending3x, Ending3y, Ending3width, Ending3height);
   fill(resetDefaultInk);
   //
 }
