@@ -42,7 +42,8 @@ They are true to their words and let you pass without a fight. You reach the edg
 
 # Ending four Text Notes
 - [Congratulations You Won!]
-- [Filler Text]
+- [You hide in a hollow tree. You hear the wolves searching for you. After a while they lose interest and move on. You manage to find your
+way out of the forest and make it back home safe and sound.]
 - [Reset and try again?]
 
 # Gambit Location Map Notes
