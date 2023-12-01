@@ -12,7 +12,7 @@ PFont ButtonFont;
 PFont TitleFont;
 PFont DeathFont;
 String Title4 = "Congratulations You Won!";
-String Ending4Text = "You hide in a hollow tree. You hear the wolves searching for you. After a while they lose interest and move on. You manage to find your way out of the forest and make it back home safe and sound.";
+String Ending4Text = "You flee from the wolves. You can hear them giving chase. Franticly you climb up a tree to escape them. They pace around the bottom of the tree for several hours before moving on. You make it out of the forest and make it back home safe and sound.";
 String ResetButton = "Reset and try again?";
 float Ending4Backgroundx, Ending4Backgroundy, Ending4Backgroundwidth, Ending4Backgroundheight;
 float Ending4x, Ending4y, Ending4width, Ending4height;
@@ -33,7 +33,7 @@ void setup() {
   String up = "..";
   String imagesPath = up + open;
   String Imagefolder = "Images";
-  String EndingImage2 = "Death Image 1.jpg";
+  String EndingImage2 = "Exit Image 2.jpg";
   //
   Ending4Backgroundx = appWidth*0;
   Ending4Backgroundy = appHeight*0;
