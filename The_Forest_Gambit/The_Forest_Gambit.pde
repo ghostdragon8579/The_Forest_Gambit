@@ -95,7 +95,7 @@ void setup() {
   //
   String open = "/";
   String up = "..";
-  String imagesPath = up + open;
+  String imagesPath = up + open + up + open + up + open;
   String Imagefolder = "Images";
   String ForestImage = "Forest Image.jpg";
   String ForestImage2 = "Forest_Exit_Ending.jpg";
