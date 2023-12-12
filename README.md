@@ -45,6 +45,10 @@ They are true to their words and let you pass without a fight. You reach the edg
 - [You flee from the wolves. You can hear them giving chase. Franticly you climb up a tree to escape them. They pace around the bottom of the tree for several hours before moving on. You make it out of the forest and make it back home safe and sound.]
 - [Reset and try again?]
 
+# Ending five Text Notes
+- [You attempt to flee and get shot in the back with a crosbow bolt. You Died]
+- [Reset and try again?]
+
 # Gambit Location Map Notes
 - [Start of the Gambit will have a button leading to the location map]
 - [Clicking on any location marked on the map will take you to that part
