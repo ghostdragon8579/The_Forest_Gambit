@@ -6,16 +6,16 @@ color DarkRed=#AA021B;
 color resetDefaultInk=#FFFFFF;
 int appWidth, appHeight;
 int size;
-PImage BackgroundImage5;
+PImage BackgroundImage4;
 PFont QuestionFont;
 PFont ButtonFont;
 PFont TitleFont;
 PFont DeathFont;
 String Title4 = "Congratulations You Won!";
-String Ending4Text = "You flee from the wolves. You can hear them giving chase. Franticly you climb up a tree to escape them. They pace around the bottom of the tree for several hours before moving on. You make it out of the forest and make it back home safe and sound.";
+String Ending5Text = "You attempt to flee and get shot in the back with a crosbow bolt. You Died";
 String ResetButton = "Reset and try again?";
-float Ending4Backgroundx, Ending4Backgroundy, Ending4Backgroundwidth, Ending4Backgroundheight;
-float Ending4x, Ending4y, Ending4width, Ending4height;
+float Ending5Backgroundx, Ending5Backgroundy, Ending5Backgroundwidth, Ending5Backgroundheight;
+float Ending5x, Ending5y, Ending5width, Ending5height;
 float Title6x, Title6y, Title6width, Title6height;
 float ResetButton4x, ResetButton4y, ResetButton4width, ResetButton4height;
 //
@@ -31,20 +31,20 @@ void setup() {
   //
   String open = "/";
   String up = "..";
-  String imagesPath = up + open;
+  String imagesPath = up + open + up + open;
   String Imagefolder = "Images";
-  String EndingImage2 = "Exit Image 2.jpg";
+  String EndingImage3 = "Death Image 1.jpg";
   //
-  Ending4Backgroundx = appWidth*0;
-  Ending4Backgroundy = appHeight*0;
-  Ending4Backgroundwidth = appWidth-1;
-  Ending4Backgroundheight = appHeight-1;
-  BackgroundImage5 = loadImage(imagesPath + Imagefolder + open + EndingImage2);
+  Ending5Backgroundx = appWidth*0;
+  Ending5Backgroundy = appHeight*0;
+  Ending5Backgroundwidth = appWidth-1;
+  Ending5Backgroundheight = appHeight-1;
+  BackgroundImage4 = loadImage(imagesPath + Imagefolder + open + EndingImage3);
   //
-  Ending4x = appWidth*1/5;
-  Ending4y = appHeight*1/4;
-  Ending4width = appWidth*3/5;
-  Ending4height = appHeight*5/13;
+  Ending5x = appWidth*1/5;
+  Ending5y = appHeight*1/4;
+  Ending5width = appWidth*3/5;
+  Ending5height = appHeight*5/13;
   //
   Title6x = appWidth*1/5;
   Title6y = appHeight*1/20;
@@ -65,10 +65,10 @@ void setup() {
 //
 void draw() {
   //
-  rect(Ending4Backgroundx, Ending4Backgroundy, Ending4Backgroundwidth, Ending4Backgroundheight);
-  image(BackgroundImage5, Ending4Backgroundx, Ending4Backgroundy, Ending4Backgroundwidth, Ending4Backgroundheight);
-  rect(Ending4x, Ending4y, Ending4width, Ending4height);
   rect(Title6x, Title6y, Title6width, Title6height);
+  rect(Ending5x, Ending5y, Ending5width, Ending5height);
+  rect(Ending5Backgroundx, Ending5Backgroundy, Ending5Backgroundwidth, Ending5Backgroundheight);
+  image(BackgroundImage4, Ending5Backgroundx, Ending5Backgroundy, Ending5Backgroundwidth, Ending5Backgroundheight);
   rect(ResetButton4x, ResetButton4y, ResetButton4width, ResetButton4height);
   //
   color hoverOverColor=resetDefaultInk;
@@ -79,11 +79,11 @@ void draw() {
     fill(resetDefaultInk);
   }
   //
-  fill(Black);
+  fill(DarkRed);
   textAlign(CENTER, CENTER); 
-  size = 30;
-  textFont(QuestionFont, size); 
-  text(Ending4Text, Ending4x, Ending4y, Ending4width, Ending4height);
+  size = 50;
+  textFont(DeathFont, size); 
+  text(Ending5Text, Ending5x, Ending5y, Ending5width, Ending5height);
   fill(resetDefaultInk);
   //
   fill(Black);
@@ -92,14 +92,14 @@ void draw() {
   textFont(ButtonFont, size); 
   text(ResetButton, ResetButton4x, ResetButton4y, ResetButton4width, ResetButton4height);
   fill(resetDefaultInk);
-  //
+  /*
   fill(DarkGreen);
   textAlign(CENTER, CENTER); 
   size = 50;
   textFont(TitleFont, size); 
   text(Title4, Title6x, Title6y, Title6width, Title6height);
   fill(resetDefaultInk);
-  //
+  */
 } //End draw
 //
 void keyPressed() {} //End keyPressed
