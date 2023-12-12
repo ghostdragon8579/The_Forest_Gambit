@@ -17,7 +17,7 @@ String ResetButton = "Reset and try again?";
 float Ending5Backgroundx, Ending5Backgroundy, Ending5Backgroundwidth, Ending5Backgroundheight;
 float Ending5x, Ending5y, Ending5width, Ending5height;
 float Title6x, Title6y, Title6width, Title6height;
-float ResetButton4x, ResetButton4y, ResetButton4width, ResetButton4height;
+float ResetButton5x, ResetButton5y, ResetButton5width, ResetButton5height;
 //
 void setup() {
 //
