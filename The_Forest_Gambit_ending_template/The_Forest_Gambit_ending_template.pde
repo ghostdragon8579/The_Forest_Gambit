@@ -51,10 +51,10 @@ void setup() {
   Title6width = appWidth*3/5;
   Title6height = appHeight*2/13;
   //
-  ResetButton4x = appWidth*2/5;
-  ResetButton4y = appHeight*2/3;
-  ResetButton4width = appWidth*1/5;
-  ResetButton4height = appHeight*2/13;
+  ResetButton5x = appWidth*2/5;
+  ResetButton5y = appHeight*2/3;
+  ResetButton5width = appWidth*1/5;
+  ResetButton5height = appHeight*2/13;
   //
   QuestionFont = createFont("Arial", 55);
   ButtonFont = createFont("Calibri", 55);
@@ -69,13 +69,13 @@ void draw() {
   rect(Ending5x, Ending5y, Ending5width, Ending5height);
   rect(Ending5Backgroundx, Ending5Backgroundy, Ending5Backgroundwidth, Ending5Backgroundheight);
   image(BackgroundImage4, Ending5Backgroundx, Ending5Backgroundy, Ending5Backgroundwidth, Ending5Backgroundheight);
-  rect(ResetButton4x, ResetButton4y, ResetButton4width, ResetButton4height);
+  rect(ResetButton5x, ResetButton5y, ResetButton5width, ResetButton5height);
   //
   color hoverOverColor=resetDefaultInk;
-  if (mouseX>ResetButton4x && mouseX<ResetButton4x+ResetButton4width && mouseY>ResetButton4y && mouseY<ResetButton4y+ResetButton4height) {
+  if (mouseX>ResetButton5x && mouseX<ResetButton5x+ResetButton5width && mouseY>ResetButton5y && mouseY<ResetButton5y+ResetButton5height) {
     hoverOverColor = Red;
     fill(hoverOverColor);
-    rect(ResetButton4x, ResetButton4y, ResetButton4width, ResetButton4height);
+    rect(ResetButton5x, ResetButton5y, ResetButton5width, ResetButton5height);
     fill(resetDefaultInk);
   }
   //
@@ -90,7 +90,7 @@ void draw() {
   textAlign(CENTER, CENTER); 
   size = 30;
   textFont(ButtonFont, size); 
-  text(ResetButton, ResetButton4x, ResetButton4y, ResetButton4width, ResetButton4height);
+  text(ResetButton, ResetButton5x, ResetButton5y, ResetButton5width, ResetButton5height);
   fill(resetDefaultInk);
   /*
   fill(DarkGreen);
