@@ -12,12 +12,12 @@ PFont ButtonFont;
 PFont TitleFont;
 PFont DeathFont;
 String Title4 = "Congratulations You Won!";
-String Ending5Text = "You attempt to flee and get shot in the back with a crosbow bolt. You Died";
+String Ending6Text = "You attempt to flee and get shot in the back with a crosbow bolt. You Died";
 String ResetButton = "Reset and try again?";
-float Ending5Backgroundx, Ending5Backgroundy, Ending5Backgroundwidth, Ending5Backgroundheight;
-float Ending5x, Ending5y, Ending5width, Ending5height;
+float Ending6Backgroundx, Ending6Backgroundy, Ending6Backgroundwidth, Ending6Backgroundheight;
+float Ending6x, Ending6y, Ending6width, Ending6height;
 float Title6x, Title6y, Title6width, Title6height;
-float ResetButton5x, ResetButton5y, ResetButton5width, ResetButton5height;
+float ResetButton6x, ResetButton6y, ResetButton6width, ResetButton6height;
 //
 void setup() {
 //
@@ -35,26 +35,26 @@ void setup() {
   String Imagefolder = "Images";
   String EndingImage3 = "Death Image 1.jpg";
   //
-  Ending5Backgroundx = appWidth*0;
-  Ending5Backgroundy = appHeight*0;
-  Ending5Backgroundwidth = appWidth-1;
-  Ending5Backgroundheight = appHeight-1;
+  Ending6Backgroundx = appWidth*0;
+  Ending6Backgroundy = appHeight*0;
+  Ending6Backgroundwidth = appWidth-1;
+  Ending6Backgroundheight = appHeight-1;
   BackgroundImage4 = loadImage(imagesPath + Imagefolder + open + EndingImage3);
   //
-  Ending5x = appWidth*1/5;
-  Ending5y = appHeight*1/4;
-  Ending5width = appWidth*3/5;
-  Ending5height = appHeight*5/13;
+  Ending6x = appWidth*1/5;
+  Ending6y = appHeight*1/4;
+  Ending6width = appWidth*3/5;
+  Ending6height = appHeight*5/13;
   //
   Title6x = appWidth*1/5;
   Title6y = appHeight*1/20;
   Title6width = appWidth*3/5;
   Title6height = appHeight*2/13;
   //
-  ResetButton5x = appWidth*2/5;
-  ResetButton5y = appHeight*2/3;
-  ResetButton5width = appWidth*1/5;
-  ResetButton5height = appHeight*2/13;
+  ResetButton6x = appWidth*2/5;
+  ResetButton6y = appHeight*2/3;
+  ResetButton6width = appWidth*1/5;
+  ResetButton6height = appHeight*2/13;
   //
   QuestionFont = createFont("Arial", 55);
   ButtonFont = createFont("Calibri", 55);
@@ -66,16 +66,16 @@ void setup() {
 void draw() {
   //
   rect(Title6x, Title6y, Title6width, Title6height);
-  rect(Ending5x, Ending5y, Ending5width, Ending5height);
-  rect(Ending5Backgroundx, Ending5Backgroundy, Ending5Backgroundwidth, Ending5Backgroundheight);
-  image(BackgroundImage4, Ending5Backgroundx, Ending5Backgroundy, Ending5Backgroundwidth, Ending5Backgroundheight);
-  rect(ResetButton5x, ResetButton5y, ResetButton5width, ResetButton5height);
+  rect(Ending6x, Ending6y, Ending6width, Ending6height);
+  rect(Ending6Backgroundx, Ending6Backgroundy, Ending6Backgroundwidth, Ending6Backgroundheight);
+  image(BackgroundImage4, Ending6Backgroundx, Ending6Backgroundy, Ending6Backgroundwidth, Ending6Backgroundheight);
+  rect(ResetButton6x, ResetButton6y, ResetButton6width, ResetButton6height);
   //
   color hoverOverColor=resetDefaultInk;
-  if (mouseX>ResetButton5x && mouseX<ResetButton5x+ResetButton5width && mouseY>ResetButton5y && mouseY<ResetButton5y+ResetButton5height) {
+  if (mouseX>ResetButton6x && mouseX<ResetButton6x+ResetButton6width && mouseY>ResetButton6y && mouseY<ResetButton6y+ResetButton6height) {
     hoverOverColor = Red;
     fill(hoverOverColor);
-    rect(ResetButton5x, ResetButton5y, ResetButton5width, ResetButton5height);
+    rect(ResetButton6x, ResetButton6y, ResetButton6width, ResetButton6height);
     fill(resetDefaultInk);
   }
   //
@@ -83,14 +83,14 @@ void draw() {
   textAlign(CENTER, CENTER); 
   size = 50;
   textFont(DeathFont, size); 
-  text(Ending5Text, Ending5x, Ending5y, Ending5width, Ending5height);
+  text(Ending6Text, Ending6x, Ending6y, Ending6width, Ending6height);
   fill(resetDefaultInk);
   //
   fill(Black);
   textAlign(CENTER, CENTER); 
   size = 30;
   textFont(ButtonFont, size); 
-  text(ResetButton, ResetButton5x, ResetButton5y, ResetButton5width, ResetButton5height);
+  text(ResetButton, ResetButton6x, ResetButton6y, ResetButton6width, ResetButton6height);
   fill(resetDefaultInk);
   /*
   fill(DarkGreen);
