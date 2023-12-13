@@ -1,5 +1,4 @@
 # The_Forest_Gambit
-- [Make an Image hoverover]
 
 # Question set one
 - [The Forest Gambit]
@@ -49,14 +48,13 @@ They are true to their words and let you pass without a fight. You reach the edg
 - [You attempt to flee and get shot in the back with a crosbow bolt. You Died]
 - [Reset and try again?]
 
-# Gambit Location Map Notes
-- [Start of the Gambit will have a button leading to the location map]
-- [Clicking on any location marked on the map will take you to that part
-of the adventure.]
+# Ending six Text Notes
+- [Congratulations You Won!]
+- [Filler Text]
+- [Reset and try again?]
 
 # Creaton Notes
 - [Create a Choose your own adventure]
-- [All parts must have a reset button]
-- [The reset Button must have a reset confirmation]
+- [All endings must have a reset button]
 - [Each step in the adventure must have three options]
 - [Beginning will have two real options and one ending]
