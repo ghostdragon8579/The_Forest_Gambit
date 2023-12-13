@@ -6,13 +6,13 @@ color DarkRed=#AA021B;
 color resetDefaultInk=#FFFFFF;
 int appWidth, appHeight;
 int size;
-PImage BackgroundImage4;
+PImage BackgroundImage6;
 PFont QuestionFont;
 PFont ButtonFont;
 PFont TitleFont;
 PFont DeathFont;
 String Title4 = "Congratulations You Won!";
-String Ending6Text = "You attempt to flee and get shot in the back with a crosbow bolt. You Died";
+String Ending6Text = "Filler Text";
 String ResetButton = "Reset and try again?";
 float Ending6Backgroundx, Ending6Backgroundy, Ending6Backgroundwidth, Ending6Backgroundheight;
 float Ending6x, Ending6y, Ending6width, Ending6height;
@@ -31,15 +31,15 @@ void setup() {
   //
   String open = "/";
   String up = "..";
-  String imagesPath = up + open + up + open;
-  String Imagefolder = "Images";
-  String EndingImage3 = "Death Image 1.jpg";
+  String imagesPath = up + open;
+  String Imagefolder = "Images3";
+  String EndingImage4 = "Wolf Image2.jpg";
   //
   Ending6Backgroundx = appWidth*0;
   Ending6Backgroundy = appHeight*0;
   Ending6Backgroundwidth = appWidth-1;
   Ending6Backgroundheight = appHeight-1;
-  BackgroundImage4 = loadImage(imagesPath + Imagefolder + open + EndingImage3);
+  BackgroundImage6 = loadImage(imagesPath + Imagefolder + open + EndingImage4);
   //
   Ending6x = appWidth*1/5;
   Ending6y = appHeight*1/4;
@@ -65,10 +65,10 @@ void setup() {
 //
 void draw() {
   //
+  rect(Ending6Backgroundx, Ending6Backgroundy, Ending6Backgroundwidth, Ending6Backgroundheight);
+  image(BackgroundImage6, Ending6Backgroundx, Ending6Backgroundy, Ending6Backgroundwidth, Ending6Backgroundheight);
   rect(Title6x, Title6y, Title6width, Title6height);
   rect(Ending6x, Ending6y, Ending6width, Ending6height);
-  rect(Ending6Backgroundx, Ending6Backgroundy, Ending6Backgroundwidth, Ending6Backgroundheight);
-  image(BackgroundImage4, Ending6Backgroundx, Ending6Backgroundy, Ending6Backgroundwidth, Ending6Backgroundheight);
   rect(ResetButton6x, ResetButton6y, ResetButton6width, ResetButton6height);
   //
   color hoverOverColor=resetDefaultInk;
@@ -79,10 +79,10 @@ void draw() {
     fill(resetDefaultInk);
   }
   //
-  fill(DarkRed);
+  fill(Black);
   textAlign(CENTER, CENTER); 
-  size = 50;
-  textFont(DeathFont, size); 
+  size = 30;
+  textFont(QuestionFont, size); 
   text(Ending6Text, Ending6x, Ending6y, Ending6width, Ending6height);
   fill(resetDefaultInk);
   //
@@ -92,14 +92,14 @@ void draw() {
   textFont(ButtonFont, size); 
   text(ResetButton, ResetButton6x, ResetButton6y, ResetButton6width, ResetButton6height);
   fill(resetDefaultInk);
-  /*
+  //
   fill(DarkGreen);
   textAlign(CENTER, CENTER); 
   size = 50;
   textFont(TitleFont, size); 
   text(Title4, Title6x, Title6y, Title6width, Title6height);
   fill(resetDefaultInk);
-  */
+  //
 } //End draw
 //
 void keyPressed() {} //End keyPressed
