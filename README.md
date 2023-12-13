@@ -54,7 +54,7 @@ They are true to their words and let you pass without a fight. You reach the edg
 - [Reset and try again?]
 
 # Ending seven Text Notes
-- [You attempt to fight the wolves but there are far to many of them for you to take on by yourself. You bie but you don't go down without a fight.]
+- [You attempt to fight the wolves but there are far to many of them for you to take on by yourself. You die but you don't go down without a fight.]
 - [Reset and try again?]
 
 # Creaton Notes
