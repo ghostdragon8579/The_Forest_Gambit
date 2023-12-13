@@ -53,7 +53,7 @@ They are true to their words and let you pass without a fight. You reach the edg
 - [You hide in a hollow tree. You hear the wolves howl as they pass you by and continue on their hunt. You make it out of the forest and make it back home safe and sound.]
 - [Reset and try again?]
 
-# Ending six Text Notes
+# Ending seven Text Notes
 - [Filler Text]
 - [Reset and try again?]
 
