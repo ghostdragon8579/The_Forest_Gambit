@@ -14,6 +14,7 @@ String Ending2Text = "You accept the bandit's terms and pay them money for safe 
 String Ending3Text = "You Died";
 String Ending4Text = "You flee from the wolves. You can hear them giving chase. Franticly you climb up a tree to escape them. They pace around the bottom of the tree for several hours before moving on. You make it out of the forest and make it back home safe and sound.";
 String Ending5Text = "You attempt to flee and get shot in the back with a crosbow bolt. You Died";
+String Ending6Text = "You hide in a hollow tree. You hear the wolves howl as they pass you by and continue on their hunt. You make it out of the forest and make it back home safe and sound.";
 String Path1 = "The First path";
 String Path2 = "The Second path";
 String Path3 = "The Third path";
@@ -30,6 +31,7 @@ PImage BackgroundImage2;
 PImage BackgroundImage3;
 PImage BackgroundImage4;
 PImage BackgroundImage5;
+PImage BackgroundImage6;
 PImage WolfPicture;
 PImage WolfFace;
 PImage BanditImage2;
@@ -46,6 +48,7 @@ float ResetButton2x, ResetButton2y, ResetButton2width, ResetButton2height;
 float ResetButton3x, ResetButton3y, ResetButton3width, ResetButton3height;
 float ResetButton4x, ResetButton4y, ResetButton4width, ResetButton4height;
 float ResetButton5x, ResetButton5y, ResetButton5width, ResetButton5height;
+float ResetButton6x, ResetButton6y, ResetButton6width, ResetButton6height;
 float xRectBackground, yRectBackground, widthRectBackground, heightRectBackground;
 float xRectBackground2, yRectBackground2, widthRectBackground2, heightRectBackground2;
 float xRectBackground3, yRectBackground3, widthRectBackground3, heightRectBackground3;
@@ -54,6 +57,7 @@ float Ending2Backgroundx, Ending2Backgroundy, Ending2Backgroundwidth, Ending2Bac
 float Ending3Backgroundx, Ending3Backgroundy, Ending3Backgroundwidth, Ending3Backgroundheight;
 float Ending4Backgroundx, Ending4Backgroundy, Ending4Backgroundwidth, Ending4Backgroundheight;
 float Ending5Backgroundx, Ending5Backgroundy, Ending5Backgroundwidth, Ending5Backgroundheight;
+float Ending6Backgroundx, Ending6Backgroundy, Ending6Backgroundwidth, Ending6Backgroundheight;
 float Title1x, Title1y, Title1width, Title1height;
 float Title2x, Title2y, Title2width, Title2height;
 float Title3x, Title3y, Title3width, Title3height;
@@ -81,7 +85,6 @@ float xChoiceButton8, yChoiceButton8, widthChoiceButton8, heightChoiceButton8;
 float xChoiceButton9, yChoiceButton9, widthChoiceButton9, heightChoiceButton9;
 Boolean continue1=false;
 Boolean continue2=false;
-Boolean continue3=false;
 Boolean StoryEnding1=false;
 Boolean StoryEnding2=false;
 Boolean StoryEnding3=false;
@@ -103,8 +106,8 @@ void setup() {
   //
   String open = "/";
   String up = "..";
-  String imagesPath = up + open + up + open + up + open;
-  String Imagefolder = "Images";
+  String imagesPath = up + open;
+  String Imagefolder = "Images3";
   String ForestImage = "Forest Image.jpg";
   String ForestImage2 = "Forest_Exit_Ending.jpg";
   String WolfImage = "Wolf Image.jpg";
@@ -114,11 +117,13 @@ void setup() {
   String EndingImage1 = "Exit Image 1.jpg";
   String EndingImage2 = "Exit Image 2.jpg";
   String EndingImage3 = "Death Image 1.jpg";
+  String EndingImage4 = "Wolf Image2.jpg";
   BackgroundImage = loadImage(imagesPath + Imagefolder + open + ForestImage);
   BackgroundImage2 = loadImage(imagesPath + Imagefolder + open + ForestImage2);
   BackgroundImage3 = loadImage(imagesPath + Imagefolder + open + EndingImage1);
   BackgroundImage4 = loadImage(imagesPath + Imagefolder + open + EndingImage3);
   BackgroundImage5 = loadImage(imagesPath + Imagefolder + open + EndingImage2);
+  BackgroundImage6 = loadImage(imagesPath + Imagefolder + open + EndingImage4);
   WolfPicture = loadImage(imagesPath + Imagefolder + open + WolfImage);
   WolfFace = loadImage(imagesPath + Imagefolder + open + WolfImage2);
   BanditImage2 = loadImage(imagesPath + Imagefolder + open + BanditImage);
@@ -164,6 +169,11 @@ void setup() {
   Ending5Backgroundwidth = appWidth-1;
   Ending5Backgroundheight = appHeight-1;
   //
+  Ending6Backgroundx = appWidth*0;
+  Ending6Backgroundy = appHeight*0;
+  Ending6Backgroundwidth = appWidth-1;
+  Ending6Backgroundheight = appHeight-1;
+  //
   Question1x = appWidth*1/5;
   Question1y = appHeight*1/4;
   Question1width = appWidth*3/5;
@@ -203,6 +213,11 @@ void setup() {
   Ending5y = appHeight*1/4;
   Ending5width = appWidth*3/5;
   Ending5height = appHeight*5/13;
+  //
+  Ending6x = appWidth*1/5;
+  Ending6y = appHeight*1/4;
+  Ending6width = appWidth*3/5;
+  Ending6height = appHeight*5/13;
   //
   Title1x = Question1x;
   Title1y = appHeight*1/20;
@@ -304,6 +319,11 @@ void setup() {
   ResetButton5width = appWidth*1/5;
   ResetButton5height = appHeight*2/13;
   //
+  ResetButton6x = appWidth*2/5;
+  ResetButton6y = appHeight*2/3;
+  ResetButton6width = appWidth*1/5;
+  ResetButton6height = appHeight*2/13;
+  //
   QuestionFont = createFont("Arial", 55);
   ButtonFont = createFont("Calibri", 55);
   DeathFont = createFont("Papyrus", 55);
@@ -313,22 +333,22 @@ void setup() {
 //
 void draw() {
   //
-  if (StoryEnding1==true && StoryEnding2==false && StoryEnding3==false && StoryEnding4==false && StoryEnding5==false && StoryWolfEncounter==false && StoryBanditEcounter==false) LeftTheForest ();
-  if (StoryEnding1==false && StoryEnding2==false && StoryEnding3==false && StoryEnding4==false && StoryEnding5==false && StoryWolfEncounter==true && StoryBanditEcounter==false) WolfEncounter ();
-  if (StoryEnding1==false && StoryEnding2==false && StoryEnding3==false && StoryEnding4==true && StoryEnding5==false && StoryWolfEncounter==true && StoryBanditEcounter==false) WolfFlee ();
-  if (StoryEnding1==false && StoryEnding2==false && StoryEnding3==false && StoryEnding4==false && StoryEnding5==false && StoryWolfEncounter==false && StoryBanditEcounter==true) BanditEncounter ();
-  if (StoryEnding1==false && StoryEnding2==false && StoryEnding3==true && StoryEnding4==false && StoryEnding5==false && StoryWolfEncounter==false && StoryBanditEcounter==true) BanditFight ();
-  if (StoryEnding1==false && StoryEnding2==false && StoryEnding3==false && StoryEnding4==false && StoryEnding5==true && StoryWolfEncounter==false && StoryBanditEcounter==true) BanditFlee ();
-  if (StoryEnding1==false && StoryEnding2==true && StoryEnding3==false && StoryEnding4==false && StoryEnding5==false && StoryWolfEncounter==false && StoryBanditEcounter==true) BanditParlay ();
-  if (StoryEnding1==false && StoryEnding2==false && StoryEnding3==false && StoryEnding4==false && StoryEnding5==false && StoryWolfEncounter==false && StoryBanditEcounter==false) EnteringTheForest ();
+  if (StoryEnding1==true && StoryEnding2==false && StoryEnding3==false && StoryEnding4==false && StoryEnding5==false && StoryEnding6==false && StoryWolfEncounter==false && StoryBanditEcounter==false) LeftTheForest ();
+  if (StoryEnding1==false && StoryEnding2==false && StoryEnding3==false && StoryEnding4==false && StoryEnding5==false && StoryEnding6==false && StoryWolfEncounter==true && StoryBanditEcounter==false) WolfEncounter ();
+  if (StoryEnding1==false && StoryEnding2==false && StoryEnding3==false && StoryEnding4==true && StoryEnding5==false && StoryEnding6==false && StoryWolfEncounter==true && StoryBanditEcounter==false) WolfFlee ();
+  if (StoryEnding1==false && StoryEnding2==false && StoryEnding3==false && StoryEnding4==false && StoryEnding5==false && StoryEnding6==true && StoryWolfEncounter==true && StoryBanditEcounter==false) WolfHide ();
+  if (StoryEnding1==false && StoryEnding2==false && StoryEnding3==false && StoryEnding4==false && StoryEnding5==false && StoryEnding6==false && StoryWolfEncounter==false && StoryBanditEcounter==true) BanditEncounter ();
+  if (StoryEnding1==false && StoryEnding2==false && StoryEnding3==true && StoryEnding4==false && StoryEnding5==false && StoryEnding6==false && StoryWolfEncounter==false && StoryBanditEcounter==true) BanditFight ();
+  if (StoryEnding1==false && StoryEnding2==false && StoryEnding3==false && StoryEnding4==false && StoryEnding5==true && StoryEnding6==false && StoryWolfEncounter==false && StoryBanditEcounter==true) BanditFlee ();
+  if (StoryEnding1==false && StoryEnding2==true && StoryEnding3==false && StoryEnding4==false && StoryEnding5==false && StoryEnding6==false && StoryWolfEncounter==false && StoryBanditEcounter==true) BanditParlay ();
+  if (StoryEnding1==false && StoryEnding2==false && StoryEnding3==false && StoryEnding4==false && StoryEnding5==false && StoryEnding6==false && StoryWolfEncounter==false && StoryBanditEcounter==false) EnteringTheForest ();
   //
 } //End draw
 //
 void keyPressed() {
   //
-  if (key=='C' || key=='c' && StoryWolfEncounter==true) continue1=true;
-  if (key=='C' || key=='c' && StoryBanditEcounter==true) continue2=true;
-  if (key=='C' || key=='c' && StoryEnding1==true) continue3=true;
+  if (key=='C' || key=='c' && StoryBanditEcounter==true) continue1=true;
+  if (key=='C' || key=='c' && StoryWolfEncounter==true) continue2=true;
   //
 } //End keyPressed
 //
@@ -340,11 +360,6 @@ void mousePressed() {
   if (mouseX>ResetButton1x && mouseX<ResetButton1x+ResetButton1width && mouseY>ResetButton1y && mouseY<ResetButton1y+ResetButton1height && StoryEnding1==true) {
   StoryEnding1=false;
   }
-  if (mouseX>ResetButton5x && mouseX<ResetButton5x+ResetButton5width && mouseY>ResetButton5y && mouseY<ResetButton5y+ResetButton5height && StoryEnding5==true) {
-  StoryEnding5=false;
-  StoryBanditEcounter=false;
-  continue2=false;
-  }
   if (mouseX>ResetButton2x && mouseX<ResetButton2x+ResetButton2width && mouseY>ResetButton2y && mouseY<ResetButton2y+ResetButton2height && StoryEnding2==true) {
   StoryEnding2=false;
   StoryBanditEcounter=false;
@@ -353,14 +368,24 @@ void mousePressed() {
   StoryEnding3=false;
   StoryBanditEcounter=false;
   }
-  if (mouseX>ResetButton4x && mouseX<ResetButton4x+ResetButton4width && mouseY>ResetButton4y && mouseY<ResetButton4y+ResetButton4height && StoryEnding4==true && continue1==true) {
+  if (mouseX>ResetButton4x && mouseX<ResetButton4x+ResetButton4width && mouseY>ResetButton4y && mouseY<ResetButton4y+ResetButton4height && StoryEnding4==true) {
   StoryEnding4=false;
   StoryWolfEncounter=false;
   continue1=false;
   }
+  if (mouseX>ResetButton5x && mouseX<ResetButton5x+ResetButton5width && mouseY>ResetButton5y && mouseY<ResetButton5y+ResetButton5height && StoryEnding5==true) {
+  StoryEnding5=false;
+  StoryBanditEcounter=false;
+  continue2=false;
+  }
+  if (mouseX>ResetButton6x && mouseX<ResetButton6x+ResetButton6width && mouseY>ResetButton6y && mouseY<ResetButton6y+ResetButton6height && StoryEnding6==true) {
+  StoryEnding6=false;
+  StoryWolfEncounter=false;
+  }
   if (mouseX>xChoiceButton5 && mouseX<xChoiceButton5+widthChoiceButton5 && mouseY>yChoiceButton5 && mouseY<yChoiceButton5+heightChoiceButton5 && StoryWolfEncounter==true) StoryEnding4=true;
+  if (mouseX>xChoiceButton6 && mouseX<xChoiceButton6+widthChoiceButton6 && mouseY>yChoiceButton6 && mouseY<yChoiceButton6+heightChoiceButton6 && StoryWolfEncounter==true) StoryEnding6=true;
   if (mouseX>xChoiceButton7 && mouseX<xChoiceButton7+widthChoiceButton7 && mouseY>yChoiceButton7 && mouseY<yChoiceButton7+heightChoiceButton7 && StoryEnding1==false && StoryWolfEncounter==false && StoryBanditEcounter==true) StoryEnding3=true;
-  if (mouseX>xChoiceButton8 && mouseX<xChoiceButton8+widthChoiceButton8 && mouseY>yChoiceButton8 && mouseY<yChoiceButton8+heightChoiceButton8 && StoryBanditEcounter==true && continue2==true) StoryEnding5=true;
+  if (mouseX>xChoiceButton8 && mouseX<xChoiceButton8+widthChoiceButton8 && mouseY>yChoiceButton8 && mouseY<yChoiceButton8+heightChoiceButton8 && StoryBanditEcounter==true && continue1==true) StoryEnding5=true;
   if (mouseX>xChoiceButton9 && mouseX<xChoiceButton9+widthChoiceButton9 && mouseY>yChoiceButton9 && mouseY<yChoiceButton9+heightChoiceButton9 && StoryEnding1==false && StoryWolfEncounter==false && StoryBanditEcounter==true) StoryEnding2=true;
   //
 } //End mousePressed

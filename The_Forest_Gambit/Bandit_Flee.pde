@@ -1,6 +1,5 @@
 void BanditFlee () {
   //
-  rect(Title6x, Title6y, Title6width, Title6height);
   rect(Ending5x, Ending5y, Ending5width, Ending5height);
   rect(Ending5Backgroundx, Ending5Backgroundy, Ending5Backgroundwidth, Ending5Backgroundheight);
   image(BackgroundImage4, Ending5Backgroundx, Ending5Backgroundy, Ending5Backgroundwidth, Ending5Backgroundheight);
