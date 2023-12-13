@@ -15,6 +15,7 @@ String Ending3Text = "You Died";
 String Ending4Text = "You flee from the wolves. You can hear them giving chase. Franticly you climb up a tree to escape them. They pace around the bottom of the tree for several hours before moving on. You make it out of the forest and make it back home safe and sound.";
 String Ending5Text = "You attempt to flee and get shot in the back with a crosbow bolt. You Died";
 String Ending6Text = "You hide in a hollow tree. You hear the wolves howl as they pass you by and continue on their hunt. You make it out of the forest and make it back home safe and sound.";
+String Ending7Text = "You attempt to fight the wolves but there are far to many of them for you to take on by yourself. You die but you don't go down without a fight.";
 String Path1 = "The First path";
 String Path2 = "The Second path";
 String Path3 = "The Third path";
