@@ -379,32 +379,43 @@ void mousePressed() {
   if (mouseX>xChoiceButton3 && mouseX<xChoiceButton3+widthChoiceButton3 && mouseY>yChoiceButton3 && mouseY<yChoiceButton3+heightChoiceButton3 && StoryEnding1==false && StoryWolfEncounter==false && StoryBanditEcounter==false) StoryEnding1=true;
   if (mouseX>ResetButton1x && mouseX<ResetButton1x+ResetButton1width && mouseY>ResetButton1y && mouseY<ResetButton1y+ResetButton1height && StoryEnding1==true) {
   StoryEnding1=false;
+  continue1=false;
+  continue2=false;
   }
   if (mouseX>ResetButton2x && mouseX<ResetButton2x+ResetButton2width && mouseY>ResetButton2y && mouseY<ResetButton2y+ResetButton2height && StoryEnding2==true) {
   StoryEnding2=false;
   StoryBanditEcounter=false;
+  continue1=false;
+  continue2=false;
   }
   if (mouseX>ResetButton3x && mouseX<ResetButton3x+ResetButton3width && mouseY>ResetButton3y && mouseY<ResetButton3y+ResetButton3height && StoryEnding3==true) {
   StoryEnding3=false;
   StoryBanditEcounter=false;
+  continue1=false;
+  continue2=false;
   }
   if (mouseX>ResetButton4x && mouseX<ResetButton4x+ResetButton4width && mouseY>ResetButton4y && mouseY<ResetButton4y+ResetButton4height && StoryEnding4==true) {
   StoryEnding4=false;
   StoryWolfEncounter=false;
   continue1=false;
+  continue2=false;
   }
   if (mouseX>ResetButton5x && mouseX<ResetButton5x+ResetButton5width && mouseY>ResetButton5y && mouseY<ResetButton5y+ResetButton5height && StoryEnding5==true) {
   StoryEnding5=false;
   StoryBanditEcounter=false;
+  continue1=false;
   continue2=false;
   }
   if (mouseX>ResetButton6x && mouseX<ResetButton6x+ResetButton6width && mouseY>ResetButton6y && mouseY<ResetButton6y+ResetButton6height && StoryEnding6==true) {
   StoryEnding6=false;
   StoryWolfEncounter=false;
+  continue1=false;
+  continue2=false;
   }
-  if (mouseX>ResetButton6x && mouseX<ResetButton6x+ResetButton6width && mouseY>ResetButton6y && mouseY<ResetButton6y+ResetButton6height && StoryEnding7==true) {
+  if (mouseX>ResetButton7x && mouseX<ResetButton7x+ResetButton7width && mouseY>ResetButton7y && mouseY<ResetButton7y+ResetButton7height && StoryEnding7==true) {
   StoryEnding7=false;
   StoryWolfEncounter=false;
+  continue1=false;
   continue2=false;
   }
   if (mouseX>xChoiceButton4 && mouseX<xChoiceButton4+widthChoiceButton4 && mouseY>yChoiceButton4 && mouseY<yChoiceButton4+heightChoiceButton4 && StoryWolfEncounter==true && continue2==true) StoryEnding7=true;
